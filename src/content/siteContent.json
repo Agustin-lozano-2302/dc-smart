@@ -1,0 +1,233 @@
+{
+  "site": {
+    "brand": {
+      "name": "DC Management",
+      "tagline": "ESTUDIO"
+    },
+    "nav": {
+      "items": [
+        { "label": "Home", "href": "/" },
+        { "label": "Acerca de", "href": "/acerca" },
+        { "label": "Servicios", "href": "/servicios" },
+        { "label": "DC Legales", "href": "/dc-legal" },
+        { "label": "DC Smart", "href": "/dc-smart" },
+        { "label": "DCSMART APP", "href": "https://www.appsheet.com/start/" },
+        { "label": "DC Interfaz", "href": "/dc-interfaz" },
+        { "label": "DC Interior", "href": "/dc-interior" },
+        { "label": "Contacto", "href": "/contacto" }
+      ],
+      "languageToggle": {
+        "label": "EN",
+        "href": "#"
+      }
+    },
+    "footer": {
+      "address": "Av. Luis María Campos 1100 Buenos Aires, Argentina",
+      "phone": "+541140863279",
+      "email": "info@dcmanagement.com.ar",
+      "copyright": "© 2020 Creado por DC Management"
+    },
+    "social": {
+      "instagram": "#",
+      "linkedin": "#"
+    }
+  },
+  "pages": {
+    "servicios": {
+      "meta": {
+        "title": "Nuestros servicios"
+      },
+      "hero": {
+        "title": "Nuestros servicios"
+      },
+      "serviceCards": [
+        {
+          "title": "Continuidad Empresarial y Dirección Estratégica",
+          "body": "En DC Management, acompañamos a empresas y emprendedores con un enfoque integral de gestión. Brindamos un servicio continuo y personalizado que combina análisis, control y administración, adaptado a las necesidades reales de cada negocio.\n\nProponemos una nueva forma de pensar la empresa: más ágil, más eficiente y con foco en la sostenibilidad y rentabilidad. Nuestras miradas estratégica, práctica y centrada en resultados.",
+          "imageAlt": ""
+        },
+        {
+          "title": "Asesoramiento Especializado",
+          "body": "Ofrecemos un modelo de gestión adaptable, pensado especialmente para pequeñas y medianas empresas que necesitan orden, eficiencia y visión estratégica.\n\nCada cliente recibe un plan de acción personalizado, diseñado en conjunto con el emprendedor o socios, con resultados concretos en el corto tiempo.\n\nNos involucramos desde el primer momento, brindando asistencia técnica, operativa y estratégica para que puedas tomar el control total de tu empresa y proyectarla a largo plazo.",
+          "imageAlt": ""
+        }
+      ],
+      "coverage": {
+        "title": "Áreas de Cobertura",
+        "items": [
+          {
+            "title": "Contabilidad",
+            "description": "Registro contable, conciliaciones, balances e informes financieros."
+          },
+          {
+            "title": "Impuestos",
+            "description": "Liquidación y presentación de obligaciones fiscales: IVA, IIBB, SICORE, cargas sociales, etc."
+          },
+          {
+            "title": "Asesoramiento legal",
+            "description": "Contratos, estatutos, normativa vigente y soporte jurídico corporativo."
+          },
+          {
+            "title": "Gestión de RRHH",
+            "description": "Organización de equipos, roles, estructuras y procesos internos."
+          },
+          {
+            "title": "Liquidación de haberes",
+            "description": "Cálculo, liquidación y emisión de sueldos. Cumplimiento sindical."
+          },
+          {
+            "title": "Controles internos personalizados",
+            "description": "Diseño e implementación de sistemas de control adaptados a cada empresa."
+          },
+          {
+            "title": "Auditoría operativa",
+            "description": "Revisión de procesos, detección de riesgos y oportunidades de mejora."
+          },
+          {
+            "title": "Costos",
+            "description": "Análisis y seguimiento por áreas, productos o unidades de negocio."
+          },
+          {
+            "title": "Gestión de recursos e infraestructura",
+            "description": "Evaluación y planificación de recursos materiales y humanos."
+          },
+          {
+            "title": "Control documental",
+            "description": "Organización, digitalización y trazabilidad de documentación clave."
+          }
+        ]
+      },
+      "clients": {
+        "logos": [
+          { "name": "BOCHA", "href": "#" },
+          { "name": "Brea", "href": "#" },
+          { "name": "CHD Arquitectos", "href": "#" }
+        ]
+      }
+    },
+    "dcSmart": {
+      "meta": {
+        "title": "DC Smart - Soluciones Tecnológicas"
+      },
+      "hero": {
+        "title": "DC Smart - Soluciones Tecnológicas",
+        "intro": "Nuestra misión es impulsar la transformación digital de empresas, combinando nuestros años de experiencia técnica y contable con una profunda comprensión de sus necesidades del negocio. Nos dedicamos a construir soluciones tecnológicas a medida, que no sólo resuelvan desafíos actuales, sino que también sienten las bases para el crecimiento y el éxito en el futuro digital."
+      },
+      "proposal": {
+        "title": "Propuesta",
+        "body": "La mejora continua no es un destino, sino un compromiso constante que exige evaluación, ajuste y evolución. Para lograr que este ciclo sea permanente y sostenible, es fundamental integrar auditorías regulares, optimización de procesos, información y nuevas tecnologías como pilares de acción. Adicionalmente, es esencial considerar la implementación de una cultura de retroalimentación continua que fomente la participación de todos los niveles en el proceso de mejora."
+      },
+      "pillars": {
+        "items": [
+          { "title": "AUDITORIAS", "body": "" },
+          { "title": "PROCESOS", "body": "" },
+          { "title": "INFORMACIÓN", "body": "" },
+          { "title": "MEJORA", "body": "" }
+        ]
+      },
+      "tools": {
+        "title": "Herramientas propias",
+        "body": "Nos permiten agilizar los procesos y mantener los datos organizados. Esto es fundamental para generar reportes dinámicos de manera oportuna y efectiva.",
+        "ctaLabel": "Acceso APP",
+        "ctaHref": "https://www.appsheet.com/start/"
+      },
+      "deliverables": {
+        "title": "Presentaciones y entregables",
+        "body": ""
+      },
+      "about": {
+        "title": "Quienes Somos?",
+        "body": "Con más de dos décadas de trayectoria, nos dedicamos a ofrecer soluciones integrales que optimizan la eficiencia y el rendimiento de las empresas. Nuestra vocación de servicio nos impulsa a crear propuestas adaptadas que se alinean con las necesidades de cada cliente. Especializados en dirección financiera y contable, nuevas tecnologías y soporte IT, trabajamos para asegurar la salud y continuidad de las empresas. Además , contamos con un gran equipo multidisciplinario que se suma a nuestros esfuerzos para ayudar a concretar los objetivos de nuestros clientes.",
+        "team": [
+          { "name": "Diego Calderón", "role": "CEO" },
+          { "name": "Max Martinez", "role": "CTO" }
+        ]
+      }
+    },
+    "dcLegal": {
+      "meta": {
+        "title": "DC Legales"
+      },
+      "brand": {
+        "name": "López Libardi",
+        "tagline": "ABOGADOS"
+      },
+      "people": {
+        "primary": {
+          "name": "Gerónimo López Libardi",
+          "role": "Abogado",
+          "bio": ""
+        },
+        "partnersTitle": "Socios",
+        "partners": [
+          {
+            "name": "Silvia Analía Torres",
+            "bio": ""
+          },
+          {
+            "name": "María Antonella Aguirre",
+            "bio": ""
+          }
+        ]
+      }
+    },
+    "dcInterfaz": {
+      "meta": {
+        "title": "DC Interfaz"
+      },
+      "title": "DC Interfaz",
+      "body": ""
+    },
+    "equipo": {
+      "meta": {
+        "title": "Nuestro Equipo"
+      },
+      "founder": {
+        "name": "Diego Calderón",
+        "role": "Fundador",
+        "bio": ""
+      },
+      "title": "Nuestro Equipo",
+      "intro": "",
+      "members": [
+        { "name": "", "role": "", "bio": "" }
+      ]
+    },
+    "acerca": {
+      "meta": {
+        "title": "Acerca de"
+      },
+      "title": "Acerca de",
+      "body": ""
+    },
+    "dcInterior": {
+      "meta": {
+        "title": "DC Interior"
+      },
+      "title": "DC Interior",
+      "body": ""
+    },
+    "contacto": {
+      "meta": {
+        "title": "Contacto"
+      },
+      "title": "Contacto",
+      "body": ""
+    },
+    "home": {
+      "meta": {
+        "title": "Home"
+      },
+      "title": "Home",
+      "body": ""
+    }
+  },
+  "todos": {
+    "needsReview": [
+      "Completar bios en DC Legales (Gerónimo López Libardi, Silvia Analía Torres, María Antonella Aguirre).",
+      "Completar miembros del equipo en la página Nuestro Equipo (nombres/roles/bios).",
+      "Confirmar links reales de redes sociales.",
+      "Verificar si existe realmente la sección 'Presentaciones y entregables' en DC Smart (no se detectó en /dc-smart)."
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+---
+ import content from '../content/siteContent.json';
+
+ const footer = content.site.footer;
+ const social = content.site.social;
+---
+
+<footer>
+	<div>
+		<div>{footer.address}</div>
+		<div>{footer.phone}</div>
+		<div>
+			<a href={`mailto:${footer.email}`}>{footer.email}</a>
+		</div>
+	</div>
+	<div>
+		<a href={social.instagram} aria-label="Instagram">Instagram</a>
+		<a href={social.linkedin} aria-label="LinkedIn">LinkedIn</a>
+	</div>
+	<div>{footer.copyright}</div>
+</footer>

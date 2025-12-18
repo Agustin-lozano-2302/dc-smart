@@ -1,0 +1,31 @@
+---
+ import BaseLayout from '../layouts/BaseLayout.astro';
+ import content from '../content/siteContent.json';
+
+ const page = content.pages.dcLegal;
+---
+
+<BaseLayout title={page.meta.title}>
+	<h1>{page.meta.title}</h1>
+
+	<section>
+		<h2>{page.brand.name}</h2>
+		<div>{page.brand.tagline}</div>
+	</section>
+
+	<section>
+		<h2>{page.people.primary.name}</h2>
+		<div>{page.people.primary.role}</div>
+		<p>{page.people.primary.bio}</p>
+	</section>
+
+	<section>
+		<h2>{page.people.partnersTitle}</h2>
+		{page.people.partners.map((p) => (
+			<article>
+				<h3>{p.name}</h3>
+				<p>{p.bio}</p>
+			</article>
+		))}
+	</section>
+</BaseLayout>
