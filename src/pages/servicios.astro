@@ -1,0 +1,30 @@
+---
+ import BaseLayout from '../layouts/BaseLayout.astro';
+ import content from '../content/siteContent.json';
+
+ const page = content.pages.servicios;
+---
+
+<BaseLayout title={page.meta.title}>
+	<h1>{page.hero.title}</h1>
+
+	<section>
+		{page.serviceCards.map((card) => (
+			<article>
+				<h2>{card.title}</h2>
+				<p>{card.body}</p>
+			</article>
+		))}
+	</section>
+
+	<section>
+		<h2>{page.coverage.title}</h2>
+		<ul>
+			{page.coverage.items.map((item) => (
+				<li>
+					<strong>{item.title}:</strong> {item.description}
+				</li>
+			))}
+		</ul>
+	</section>
+</BaseLayout>
