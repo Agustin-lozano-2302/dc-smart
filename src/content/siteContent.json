@@ -11,8 +11,6 @@
         { "label": "Servicios", "href": "/servicios" },
         { "label": "DC Legales", "href": "/dc-legal" },
         { "label": "DC Smart", "href": "/dc-smart" },
-        { "label": "DCSMART APP", "href": "https://www.appsheet.com/start/" },
-        { "label": "DC Interfaz", "href": "/dc-interfaz" },
         { "label": "DC Interior", "href": "/dc-interior" },
         { "label": "Contacto", "href": "/contacto" }
       ],
@@ -216,9 +214,9 @@
     },
     "home": {
       "meta": {
-        "title": "Home"
+        "title": "DC Management"
       },
-      "title": "Home",
+      "title": "DC Management",
       "body": ""
     }
   },
