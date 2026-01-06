@@ -1,25 +1,51 @@
 ---
- import content from '../content/siteContent.json';
+interface Props {
+	currentPage?: string;
+	variant?: 'dark' | 'light';
+}
 
- const nav = content.site.nav;
+const { currentPage = '', variant = 'dark' } = Astro.props;
+
+const navItems = [
+	{ href: '/', label: 'INICIO', id: 'inicio' },
+	{ href: '/nosotros', label: 'NOSOTROS', id: 'nosotros' },
+	{ href: '/dc-smart', label: 'DC SMART', id: 'propuesta' },
+	{ href: '/#servicios', label: 'SERVICIOS', id: 'servicios' },
+	{ href: '/contacto', label: 'CONTACTO', id: 'contacto' },
+];
+
+const isDark = variant === 'dark';
+const textColor = isDark ? 'text-white' : 'text-gray-800';
+const hoverColor = isDark ? 'hover:text-white/80' : 'hover:text-gray-600';
+const activeClasses = isDark 
+	? 'rounded-full bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20' 
+	: 'rounded-full bg-gray-800/10 backdrop-blur-sm border border-gray-800/20 hover:bg-gray-800/20';
+const logoSrc = isDark ? '/images/home/logo-home-header.png' : '/images/logos/logo-sin-fondo.webp';
 ---
 
-<header>
-	<nav>
-		<a href="/">{content.site.brand.name}</a>
-		<ul>
-			{nav.items.map((item) => (
-				<li>
-					<a
-						href={item.href}
-						target={item.href.startsWith('http') ? '_blank' : undefined}
-						rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+<nav class="relative z-50 w-full">
+	<div class="max-w-7xl mx-auto px-16 py-6">
+		<div class="flex items-center justify-between">
+			<div class="flex items-center">
+				<a href="/">
+					<img src={logoSrc} alt="DC Smart Logo" class="h-28" />
+				</a>
+			</div>
+			
+			<div class="hidden md:flex items-center gap-2">
+				{navItems.map((item) => (
+					<a 
+						href={item.href} 
+						class={`${textColor} text-sm font-medium tracking-wider px-5 py-2 transition-colors ${
+							currentPage === item.id 
+								? activeClasses 
+								: hoverColor
+						}`}
 					>
 						{item.label}
 					</a>
-				</li>
-			))}
-		</ul>
-		<a href={nav.languageToggle.href}>{nav.languageToggle.label}</a>
-	</nav>
-</header>
+				))}
+			</div>
+		</div>
+	</div>
+</nav>
