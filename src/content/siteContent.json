@@ -7,6 +7,7 @@
     "nav": {
       "items": [
         { "label": "Home", "href": "/" },
+        { "label": "Nosotros", "href": "/nosotros" },
         { "label": "Acerca de", "href": "/acerca" },
         { "label": "Servicios", "href": "/servicios" },
         { "label": "DC Legales", "href": "/dc-legal" },
@@ -20,7 +21,7 @@
       }
     },
     "footer": {
-      "address": "Av. Luis María Campos 1100 Buenos Aires, Argentina",
+      "address": "Av. Luis María Campos 1161 Buenos Aires, Argentina",
       "phone": "+541140863279",
       "email": "info@dcmanagement.com.ar",
       "copyright": "© 2020 Creado por DC Management"
@@ -189,6 +190,108 @@
       "intro": "",
       "members": [
         { "name": "", "role": "", "bio": "" }
+      ]
+    },
+    "nosotros": {
+      "meta": {
+        "title": "Nosotros"
+      },
+      "title": "Nosotros",
+      "intro": "Conocé al equipo que hace posible DC Management.",
+      "featuredTitle": "Dirección",
+      "featured": [
+        {
+          "name": "Diego Calderón",
+          "role": "CEO",
+          "bio": "",
+          "imageSrc": "/images/diego.webp"
+        },
+        {
+          "name": "Max Martinez",
+          "role": "CTO",
+          "bio": "",
+          "imageSrc": "/images/max.webp"
+        }
+      ],
+      "legalesTitle": "Equipo Legal",
+      "legalesIntro": "",
+      "legales": [
+        {
+          "name": "Genoveva López Libardi",
+          "role": "Abogada",
+          "bio": "",
+          "imageSrc": "/images/geno.webp"
+        },
+        {
+          "name": "Silvia Analía Torres",
+          "role": "Abogada",
+          "bio": "",
+          "imageSrc": "/images/silvia-2.jpg"
+        },
+        {
+          "name": "María Antonella Aguirre",
+          "role": "Abogada",
+          "bio": "",
+          "imageSrc": "/images/maria-anto.png"
+        }
+      ],
+      "teamTitle": "Nuestro Equipo",
+      "teamIntro": "",
+      "team": [
+        {
+          "name": "Nahuel Sanchez",
+          "role": "Reporting & Costos",
+          "bio": "",
+          "imageSrc": "/images/nahuel.webp"
+        },
+        {
+          "name": "Anaxi Melgarejo",
+          "role": "Auditoria e Informes",
+          "bio": "",
+          "imageSrc": "/images/anaxi.webp"
+        },
+        {
+          "name": "Ana Corra",
+          "role": "RRHH & Control",
+          "bio": "",
+          "imageSrc": "/images/ana.webp"
+        },
+        {
+          "name": "Debora Benitez",
+          "role": "Marketing",
+          "bio": "",
+          "imageSrc": "/images/deby.webp"
+        },
+        {
+          "name": "Jorge Ferrara",
+          "role": "Auditoría",
+          "bio": "",
+          "imageSrc": "/images/jorge.webp"
+        },
+        {
+          "name": "Romina Cambiasso",
+          "role": "RRHH y Operaciones",
+          "bio": "",
+          "imageSrc": "/images/romina.webp"
+        },
+        {
+          "name": "Mariano Riveira",
+          "role": "Contador Publico",
+          "bio": "",
+          "imageSrc": ""
+        },
+        {
+          "name": "Andrea Panza",
+          "role": "RRHH",
+          "bio": "",
+          "imageSrc": ""
+        },
+        {
+          "name": "Guillermo Llanos ",
+          "role": "Tesoreria",
+          "bio": "",
+          "imageSrc": ""
+        }
       ]
     },
     "acerca": {

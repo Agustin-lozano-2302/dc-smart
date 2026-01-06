@@ -1,0 +1,112 @@
+---
+import '../styles/global.css';
+import content from '../content/siteContent.json';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+const page = content.pages.nosotros;
+
+const allMembers = [
+	...page.featured,
+	...page.legales,
+	...page.team.filter((p: any) => p.name)
+];
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="Conocé al equipo de DC Management" />
+		<title>{page.meta.title} - DC Management</title>
+	</head>
+	<body>
+		<section class="relative" style="background: linear-gradient(to bottom, #1a2535, #334355);">
+			<Nav currentPage="nosotros" />
+
+			<div class="max-w-7xl mx-auto px-8 md:px-16 py-20">
+				<h1 class="text-6xl md:text-8xl font-bold italic text-white/20 mb-6 tracking-wide">NOSOTROS</h1>
+				<p class="text-white/80 text-lg max-w-2xl">{page.intro}</p>
+			</div>
+		</section>
+
+		<main class="bg-white">
+			<!-- Sección Principal - Dirección -->
+			<section class="py-16 bg-gray-50">
+				<div class="max-w-7xl mx-auto px-8 md:px-16">
+					<div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+						{page.featured.map((person: any) => (
+							<div class="text-center">
+								<div class="w-40 h-40 mx-auto overflow-hidden rounded-full bg-gray-200 shadow-lg mb-4">
+									{person.imageSrc ? (
+										<img src={person.imageSrc} alt={person.name} class="w-full h-full object-cover" />
+									) : (
+										<div class="w-full h-full flex items-center justify-center text-gray-400 text-4xl font-bold">
+											{person.name.charAt(0)}
+										</div>
+									)}
+								</div>
+								<h3 class="text-xl font-bold text-gray-800">{person.name}</h3>
+								<p class="text-gray-500">{person.role}</p>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+
+			<!-- Equipo Legal -->
+			<section class="py-16 bg-white">
+				<div class="max-w-7xl mx-auto px-8 md:px-16">
+					<div class="flex items-center justify-center gap-4 mb-12">
+						<img src="/images/logos/logo-largo-sin-fondo.webp" alt="DC Legales" class="h-36 object-contain" />
+					</div>
+					<div class="grid md:grid-cols-3 gap-8">
+						{page.legales.map((person: any) => (
+							<div class="text-center">
+								<div class="w-32 h-32 mx-auto overflow-hidden rounded-full bg-gray-200 shadow-lg mb-4">
+									{person.imageSrc ? (
+										<img src={person.imageSrc} alt={person.name} class="w-full h-full object-cover" />
+									) : (
+										<div class="w-full h-full flex items-center justify-center text-gray-400 text-3xl font-bold">
+											{person.name.charAt(0)}
+										</div>
+									)}
+								</div>
+								<h3 class="text-lg font-semibold text-gray-800">{person.name}</h3>
+								<p class="text-gray-500 text-sm">{person.role}</p>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+
+			<div class="max-w-7xl mx-auto px-8 md:px-16 py-16">
+
+				<!-- Equipo -->
+				<section>
+					<h2 class="text-3xl font-bold text-gray-800 mb-10">{page.teamTitle}</h2>
+					<div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+						{page.team.filter((p: any) => p.name).map((person: any) => (
+							<div class="text-center p-6 bg-gray-50 rounded-2xl">
+								<div class="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 bg-gray-200">
+									{person.imageSrc ? (
+										<img src={person.imageSrc} alt={person.name} class="w-full h-full object-cover" />
+									) : (
+										<div class="w-full h-full flex items-center justify-center text-gray-400 text-xl font-bold">
+											{person.name.charAt(0)}
+										</div>
+									)}
+								</div>
+								<h3 class="font-semibold text-gray-800">{person.name}</h3>
+								<p class="text-gray-500 text-sm">{person.role}</p>
+							</div>
+						))}
+					</div>
+				</section>
+			</div>
+		</main>
+
+		<Footer />
+	</body>
+</html>
