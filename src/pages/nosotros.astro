@@ -64,17 +64,17 @@ const allMembers = [
 					<div class="grid md:grid-cols-3 gap-8">
 						{page.legales.map((person: any) => (
 							<div class="text-center">
-								<div class="w-32 h-32 mx-auto overflow-hidden rounded-full bg-gray-200 shadow-lg mb-4">
+								<div class="w-40 h-40 mx-auto overflow-hidden rounded-full bg-gray-200 shadow-lg mb-4">
 									{person.imageSrc ? (
 										<img src={person.imageSrc} alt={person.name} class="w-full h-full object-cover" />
 									) : (
-										<div class="w-full h-full flex items-center justify-center text-gray-400 text-3xl font-bold">
+										<div class="w-full h-full flex items-center justify-center text-gray-400 text-4xl font-bold">
 											{person.name.charAt(0)}
 										</div>
 									)}
 								</div>
-								<h3 class="text-lg font-semibold text-gray-800">{person.name}</h3>
-								<p class="text-gray-500 text-sm">{person.role}</p>
+								<h3 class="text-xl font-bold text-gray-800">{person.name}</h3>
+								<p class="text-gray-500">{person.role}</p>
 							</div>
 						))}
 					</div>
@@ -89,17 +89,17 @@ const allMembers = [
 					<div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 						{page.team.filter((p: any) => p.name).map((person: any) => (
 							<div class="text-center p-6 bg-gray-50 rounded-2xl">
-								<div class="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 bg-gray-200">
+								<div class="w-40 h-40 rounded-full overflow-hidden mx-auto mb-4 bg-gray-200 shadow-lg">
 									{person.imageSrc ? (
 										<img src={person.imageSrc} alt={person.name} class="w-full h-full object-cover" />
 									) : (
-										<div class="w-full h-full flex items-center justify-center text-gray-400 text-xl font-bold">
+										<div class="w-full h-full flex items-center justify-center text-gray-400 text-4xl font-bold">
 											{person.name.charAt(0)}
 										</div>
 									)}
 								</div>
-								<h3 class="font-semibold text-gray-800">{person.name}</h3>
-								<p class="text-gray-500 text-sm">{person.role}</p>
+								<h3 class="text-xl font-bold text-gray-800">{person.name}</h3>
+								<p class="text-gray-500">{person.role}</p>
 							</div>
 						))}
 					</div>
