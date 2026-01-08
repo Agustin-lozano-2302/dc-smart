@@ -21,17 +21,31 @@ const activeClasses = isDark
 	? 'rounded-full bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20' 
 	: 'rounded-full bg-gray-800/10 backdrop-blur-sm border border-gray-800/20 hover:bg-gray-800/20';
 const logoSrc = isDark ? '/images/home/logo-home-header.png' : '/images/logos/logo-sin-fondo.webp';
+const mobileMenuBg = isDark ? 'bg-[#1a2535]/95' : 'bg-white/95';
+const mobileMenuBorder = isDark ? 'border-white/10' : 'border-gray-200';
 ---
 
 <nav class="relative z-50 w-full">
-	<div class="max-w-7xl mx-auto px-16 py-6">
+	<div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-16 py-4 md:py-6">
 		<div class="flex items-center justify-between">
 			<div class="flex items-center">
 				<a href="/">
-					<img src={logoSrc} alt="DC Smart Logo" class="h-28" />
+					<img src={logoSrc} alt="DC Smart Logo" class="h-16 md:h-28" />
 				</a>
 			</div>
 			
+			<!-- Mobile menu button -->
+			<button 
+				id="mobile-menu-btn" 
+				class={`md:hidden p-2 rounded-lg ${textColor} hover:bg-white/10 transition-colors`}
+				aria-label="Abrir menú"
+			>
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+				</svg>
+			</button>
+			
+			<!-- Desktop menu -->
 			<div class="hidden md:flex items-center gap-2">
 				{navItems.map((item) => (
 					<a 
@@ -47,5 +61,43 @@ const logoSrc = isDark ? '/images/home/logo-home-header.png' : '/images/logos/lo
 				))}
 			</div>
 		</div>
+		
+		<!-- Mobile menu -->
+		<div id="mobile-menu" class={`hidden md:hidden mt-4 pb-4 ${mobileMenuBg} backdrop-blur-md rounded-2xl border ${mobileMenuBorder} overflow-hidden`}>
+			<div class="flex flex-col">
+				{navItems.map((item) => (
+					<a 
+						href={item.href} 
+						class={`${textColor} text-sm font-medium tracking-wider px-6 py-4 transition-colors border-b ${mobileMenuBorder} last:border-b-0 ${
+							currentPage === item.id 
+								? 'bg-white/10' 
+								: hoverColor
+						}`}
+					>
+						{item.label}
+					</a>
+				))}
+			</div>
+		</div>
 	</div>
 </nav>
+
+<script>
+	const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+	const mobileMenu = document.getElementById('mobile-menu');
+	const menuIcon = document.getElementById('menu-icon');
+	
+	if (mobileMenuBtn && mobileMenu && menuIcon) {
+		mobileMenuBtn.addEventListener('click', () => {
+			const isOpen = !mobileMenu.classList.contains('hidden');
+			
+			if (isOpen) {
+				mobileMenu.classList.add('hidden');
+				menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+			} else {
+				mobileMenu.classList.remove('hidden');
+				menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+			}
+		});
+	}
+</script>
