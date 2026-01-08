@@ -79,8 +79,8 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
 						<div class="hidden md:flex items-center gap-2">
 							<a href="#inicio" class="text-white text-sm font-medium tracking-wider px-5 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-colors">INICIO</a>
 							<a href="/nosotros" class="text-white text-sm font-medium tracking-wider px-5 py-2 hover:text-white/80 transition-colors">NOSOTROS</a>
-							<a href="#propuesta" class="text-white text-sm font-medium tracking-wider px-5 py-2 hover:text-white/80 transition-colors">DC SMART</a>
-							<a href="#servicios" class="text-white text-sm font-medium tracking-wider px-5 py-2 hover:text-white/80 transition-colors">SERVICIOS</a>
+							<a href="/dc-smart" class="text-white text-sm font-medium tracking-wider px-5 py-2 hover:text-white/80 transition-colors">DC SMART</a>
+							<a href="/#servicios" class="text-white text-sm font-medium tracking-wider px-5 py-2 hover:text-white/80 transition-colors">SERVICIOS</a>
 							<a href="/contacto" class="text-white text-sm font-medium tracking-wider px-5 py-2 hover:text-white/80 transition-colors">CONTACTO</a>
 						</div>
 					</div>
@@ -90,8 +90,8 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
 						<div class="flex flex-col">
 							<a href="#inicio" class="text-white text-sm font-medium tracking-wider px-6 py-4 transition-colors border-b border-white/10 bg-white/10">INICIO</a>
 							<a href="/nosotros" class="text-white text-sm font-medium tracking-wider px-6 py-4 transition-colors border-b border-white/10 hover:text-white/80">NOSOTROS</a>
-							<a href="#propuesta" class="text-white text-sm font-medium tracking-wider px-6 py-4 transition-colors border-b border-white/10 hover:text-white/80">DC SMART</a>
-							<a href="#servicios" class="text-white text-sm font-medium tracking-wider px-6 py-4 transition-colors border-b border-white/10 hover:text-white/80">SERVICIOS</a>
+							<a href="/dc-smart" class="text-white text-sm font-medium tracking-wider px-6 py-4 transition-colors border-b border-white/10 hover:text-white/80">DC SMART</a>
+							<a href="/#servicios" class="text-white text-sm font-medium tracking-wider px-6 py-4 transition-colors border-b border-white/10 hover:text-white/80">SERVICIOS</a>
 							<a href="/contacto" class="text-white text-sm font-medium tracking-wider px-6 py-4 transition-colors hover:text-white/80">CONTACTO</a>
 						</div>
 					</div>
@@ -102,7 +102,7 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
 				<div class="max-w-3xl">
 					<h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-[5rem] font-bold leading-tight text-white mb-6 md:mb-12">
 						Tu rentabilidad,<br />
-						nuestra <span class="text-[#E9E1B2] italic">Gestión</span>
+						nuestra <span class="text-[#c9b086] italic">Gestión</span>
 					</h1>
 					
 					<a href={whatsappHref} target="_blank" rel="noopener noreferrer" class="inline-block text-sm font-semibold tracking-wider px-6 py-2.5 rounded-full border-2 border-white bg-transparent text-white hover:bg-white hover:text-slate-800 transition-colors">
@@ -121,97 +121,157 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
 		<main>
 			<section id="nosotros" class="py-12 md:py-20 bg-white">
 				<div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-16">
-					<div class="grid md:grid-cols-2 gap-16 items-start">
-						<div>
-							<h2 class="text-4xl sm:text-6xl md:text-8xl font-bold italic text-gray-300 mb-6 md:mb-12 tracking-wide">NEGOCIOS</h2>
+							<div class="max-w-4xl">
+							<h2 class="text-4xl sm:text-6xl md:text-8xl font-bold italic text-[#c9b086] mb-6 md:mb-12 tracking-wide">NEGOCIOS</h2>
 							
-							<h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-6 leading-snug">
-								En DC Management, acompañamos a empresas y emprendimientos con un enfoque integral de gestión.
+							<h3 class="text-xl md:text-2xl font-bold text-[#515151] mb-6 leading-snug">
+								En <span class="italic">DC MANAGMENT</span>, acompañamos a empresas y emprendimientos con un enfoque integral de gestión.
 							</h3>
 							
-							<p class="text-gray-500 text-base leading-relaxed">
+							<p class="text-black text-base leading-relaxed">
 								Brindamos un servicio continuo y personalizado que combina análisis, control y administración, 
 								adaptado a las necesidades reales de cada negocio.
 							</p>
 						</div>
+					<div class="grid gap-16 items-start">
+				
 						
 						<!-- Mobile: Auto-scrolling carousel -->
 						<div class="md:hidden mt-8 overflow-hidden">
-							<div class="logos-carousel flex gap-6">
-								<img src="/images/negocios/imageye___-_imgi_28_Latinosandich.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_36_Thames.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_13_CHDArquitectos.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_37_Tiamo.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_23_Juanito.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_33_Nuvola.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_34_OhNoLulu.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_30_MobyDick.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_11_Bocha.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_25_LaAlacena.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_29_LosGalgos.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_8_Tognis.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+							<div class="logos-carousel flex gap-6 items-center">
+								<img src="/images/negocios/aldos.png" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/ancora.png" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/basa.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/basa2.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/chd.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/dogg.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/evelia.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/galgos.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/grand.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/grandanzon.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/laalacena.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/lafuerza.png" alt="" class="h-12 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/lucero.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/mona.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/nemuri.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/nuvola.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/revolver.png" alt="" class="h-12 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/roma.png" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/sandwich.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/tiamo.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/togca.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/togpi.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
 								<!-- Duplicated for seamless loop -->
-								<img src="/images/negocios/imageye___-_imgi_28_Latinosandich.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_36_Thames.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_13_CHDArquitectos.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_37_Tiamo.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_23_Juanito.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_33_Nuvola.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_34_OhNoLulu.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_30_MobyDick.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_11_Bocha.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_25_LaAlacena.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_29_LosGalgos.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/imageye___-_imgi_8_Tognis.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/aldos.png" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/ancora.png" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/basa.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/basa2.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/chd.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/dogg.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/evelia.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/galgos.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/grand.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/grandanzon.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/laalacena.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/lafuerza.png" alt="" class="h-12 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/lucero.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/mona.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/nemuri.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/nuvola.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/revolver.png" alt="" class="h-12 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/roma.png" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/sandwich.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/tiamo.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/togca.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/togpi.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
 							</div>
 						</div>
 						
-						<!-- Desktop: Waterfall effect -->
-						<div id="logos-waterfall" class="relative h-[55vh] overflow-hidden hidden md:block">
-							<div class="waterfall-fade-top"></div>
-							<div class="waterfall-fade-bottom"></div>
-							<div class="falling-logo" style="--col: 0; --delay: 0s; --duration: 4s;"><img src="/images/negocios/imageye___-_imgi_28_Latinosandich.webp" alt="" /></div>
-							<div class="falling-logo" style="--col: 1; --delay: 0.3s; --duration: 5s;"><img src="/images/negocios/imageye___-_imgi_36_Thames.webp" alt="" /></div>
-							<div class="falling-logo" style="--col: 2; --delay: 0.8s; --duration: 4.5s;"><img src="/images/negocios/imageye___-_imgi_13_CHDArquitectos.webp" alt="" /></div>
-							<div class="falling-logo" style="--col: 3; --delay: 0.2s; --duration: 5.5s;"><img src="/images/negocios/imageye___-_imgi_37_Tiamo.webp" alt="" /></div>
-							<div class="falling-logo" style="--col: 0; --delay: 2s; --duration: 4.2s;"><img src="/images/negocios/imageye___-_imgi_23_Juanito.webp" alt="" /></div>
-							<div class="falling-logo" style="--col: 1; --delay: 2.5s; --duration: 5.2s;"><img src="/images/negocios/imageye___-_imgi_33_Nuvola.webp" alt="" /></div>
-							<div class="falling-logo" style="--col: 2; --delay: 2.2s; --duration: 4.8s;"><img src="/images/negocios/imageye___-_imgi_34_OhNoLulu.webp" alt="" /></div>
-							<div class="falling-logo" style="--col: 3; --delay: 1.8s; --duration: 5s;"><img src="/images/negocios/imageye___-_imgi_30_MobyDick.webp" alt="" /></div>
-							<div class="falling-logo" style="--col: 0; --delay: 4s; --duration: 4.6s;"><img src="/images/negocios/imageye___-_imgi_11_Bocha.webp" alt="" /></div>
-							<div class="falling-logo" style="--col: 1; --delay: 4.5s; --duration: 5.3s;"><img src="/images/negocios/imageye___-_imgi_25_LaAlacena.webp" alt="" /></div>
-							<div class="falling-logo" style="--col: 2; --delay: 4.2s; --duration: 4.4s;"><img src="/images/negocios/imageye___-_imgi_29_LosGalgos.webp" alt="" /></div>
-							<div class="falling-logo" style="--col: 3; --delay: 3.8s; --duration: 5.1s;"><img src="/images/negocios/imageye___-_imgi_8_Tognis.webp" alt="" /></div>
+						<!-- Desktop: Marquee logos -->
+						<div class="hidden md:block overflow-hidden">
+							<div class="marquee-logos flex gap-12 items-center">
+								<img src="/images/negocios/aldos.png" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/ancora.png" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/basa.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/basa2.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+
+								<img src="/images/negocios/chd.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/dogg.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/evelia.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/galgos.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/grand.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/grandanzon.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<!-- Duplicated -->
+								<img src="/images/negocios/aldos.png" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/ancora.png" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/basa.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/basa2.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/chd.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/dogg.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/evelia.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/galgos.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/grand.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/grandanzon.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+							</div>
+							<div class="marquee-logos-reverse flex gap-12 mt-8 items-center">
+								<img src="/images/negocios/laalacena.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/lafuerza.png" alt="" class="h-14 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/lucero.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/mona.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/nemuri.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/nuvola.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/revolver.png" alt="" class="h-14 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/roma.png" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/sandwich.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/tiamo.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+
+								<img src="/images/negocios/togca.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/togpi.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<!-- Duplicated -->
+								<img src="/images/negocios/laalacena.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/lafuerza.png" alt="" class="h-14 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/lucero.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/mona.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/nemuri.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/nuvola.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/revolver.png" alt="" class="h-14 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/roma.png" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/sandwich.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/tiamo.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+
+								<img src="/images/negocios/togca.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+								<img src="/images/negocios/togpi.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section id="stats" class="py-12 md:py-20 bg-white">
+			<section id="stats" class="py-6 md:py-12 bg-white">
 				<div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-16">
 					<div class="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-12 text-center">
 						<div>
 							<div class="flex justify-center">
-							<p class="text-black text-4xl sm:text-6xl md:text-7xl font-bold mb-2">+</p>
-								<div class="counter text-4xl sm:text-6xl md:text-7xl font-bold text-gray-900 mb-2" data-target="52" data-suffix="">0</div>
+							<p class=" text-4xl sm:text-6xl md:text-7xl font-bold mb-2  text-[#c9b086] ">+</p>
+								<div class="counter text-4xl sm:text-6xl md:text-7xl font-bold text-[#c9b086] mb-2" data-target="52" data-suffix="">0</div>
 							</div>
-							<div class="text-gray-600 text-sm uppercase tracking-wide">Unidades de negocio</div>
+							<div class="text-black text-sm uppercase tracking-wide">Unidades de negocio</div>
 						</div>
 						
 						<div>
 							<div class="flex justify-center">
-							<p class="text-black text-4xl sm:text-6xl md:text-7xl font-bold mb-2">+</p>
-								<div class="counter text-4xl sm:text-6xl md:text-7xl font-bold text-gray-900 mb-2" data-target="151861" data-suffix="" data-format="true"><span class="text-gray-600">+</span>0</div>
+							<p class=" text-4xl sm:text-6xl md:text-7xl font-bold mb-2  text-[#c9b086] ">+</p>
+								<div class="counter text-4xl sm:text-6xl md:text-7xl font-bold text-[#c9b086] mb-2" data-target="151861" data-suffix="" data-format="true"><span class="text-[#c9b086]">+</span>0</div>
 							</div>
-							<div class="text-gray-600 text-sm uppercase tracking-wide">Órdenes procesadas</div>
+							<div class="text-black text-sm uppercase tracking-wide">Órdenes procesadas</div>
 						</div>
 						
 						<div>
 							<div class="flex justify-center">
-								<p class="text-black text-4xl sm:text-6xl md:text-7xl font-bold mb-2">+</p>
-								<div class="counter text-4xl sm:text-6xl md:text-7xl font-bold text-gray-900 mb-2" data-target="419" data-suffix=""></div>
+							<p class=" text-4xl sm:text-6xl md:text-7xl font-bold mb-2  text-[#c9b086] ">+</p>
+								<div class="counter text-4xl sm:text-6xl md:text-7xl font-bold text-[#c9b086] mb-2" data-target="419" data-suffix=""></div>
 							</div>
-							<div class="text-gray-600 text-sm uppercase tracking-wide">Gestiones de RRHH</div>
+							<div class="text-black text-sm uppercase tracking-wide">Gestiones de RRHH</div>
 						</div>
 					</div>
 				</div>
@@ -293,7 +353,7 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
 				<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDE2YzAtMi4yMSAxLjc5LTQgNC00czQgMS43OSA0IDQtMS43OSA0LTQgNC00LTEuNzktNC00em0wIDI0YzAtMi4yMSAxLjc5LTQgNC00czQgMS43OSA0IDQtMS43OSA0LTQgNC00LTEuNzktNC00ek0xMiAxNmMwLTIuMjEgMS43OS00IDQtNHM0IDEuNzkgNCA0LTEuNzkgNC00IDQtNC0xLjc5LTQtNHptMCAyNGMwLTIuMjEgMS43OS00IDQtNHM0IDEuNzkgNCA0LTEuNzkgNC00IDQtNC0xLjc5LTQtNHoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-40"></div>
 				<div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-16 relative z-10">
 					<div class="mb-8 md:mb-16">
-						<h2 class="text-4xl sm:text-6xl md:text-8xl font-bold italic text-white/20 mb-4 md:mb-6 tracking-wide">SERVICIOS</h2>
+						<h2 class="text-4xl sm:text-6xl md:text-8xl font-bold italic  mb-4 md:mb-6 tracking-wide text-[#c9b086] ">SERVICIOS</h2>
 						<p class="text-white/80 text-base md:text-lg">Soluciones integrales para potenciar tu negocio</p>
 					</div>
 					<div class="flex items-center gap-2 md:gap-4">
@@ -481,66 +541,41 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
 		</footer>
 
 		<style>
-			#logos-waterfall {
-				position: relative;
-			}
-			
-			@keyframes fall {
+			/* Desktop marquee logos */
+			@keyframes marquee {
 				0% {
-					transform: translateY(-80px);
-					opacity: 0;
-				}
-				10% {
-					opacity: 1;
-				}
-				90% {
-					opacity: 1;
+					transform: translateX(0);
 				}
 				100% {
-					transform: translateY(calc(288px + 80px));
-					opacity: 0;
+					transform: translateX(-50%);
 				}
 			}
 			
-			.falling-logo {
-				position: absolute;
-				top: 0;
-				left: calc(var(--col) * 25% + 12.5% - 63px);
-				width: 160px;
-				height: 120px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				padding: 0 8px;
-				animation: fall var(--duration) linear var(--delay) infinite;
+			@keyframes marquee-reverse {
+				0% {
+					transform: translateX(-50%);
+				}
+				100% {
+					transform: translateX(0);
+				}
 			}
 			
-			.falling-logo img {
-				max-width: 100%;
-				max-height: 100%;
-				object-fit: contain;
-				filter: grayscale(100%);
-				opacity: 0.8;
+			.marquee-logos {
+				animation: marquee 30s linear infinite;
+				width: max-content;
 			}
 			
-			.waterfall-fade-top,
-			.waterfall-fade-bottom {
-				position: absolute;
-				left: 0;
-				right: 0;
-				height: 40px;
-				pointer-events: none;
-				z-index: 10;
+			.marquee-logos img {
+				flex-shrink: 0;
 			}
 			
-			.waterfall-fade-top {
-				top: 0;
-				background: linear-gradient(to bottom, white 0%, transparent 100%);
+			.marquee-logos-reverse {
+				animation: marquee-reverse 30s linear infinite;
+				width: max-content;
 			}
 			
-			.waterfall-fade-bottom {
-				bottom: 0;
-				background: linear-gradient(to top, white 0%, transparent 100%);
+			.marquee-logos-reverse img {
+				flex-shrink: 0;
 			}
 			
 			.counter {

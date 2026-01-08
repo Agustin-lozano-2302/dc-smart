@@ -15,11 +15,11 @@ const navItems = [
 ];
 
 const isDark = variant === 'dark';
-const textColor = isDark ? 'text-white' : 'text-gray-800';
-const hoverColor = isDark ? 'hover:text-white/80' : 'hover:text-gray-600';
+const textColor = isDark ? 'text-white' : 'text-[#c9b086]';
+const hoverColor = isDark ? 'hover:text-white/80' : 'hover:text-[#c9b086]';
 const activeClasses = isDark 
 	? 'rounded-full bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20' 
-	: 'rounded-full bg-gray-800/10 backdrop-blur-sm border border-gray-800/20 hover:bg-gray-800/20';
+	: 'rounded-full bg-[#c9b086]/10 backdrop-blur-sm border border-[#c9b086]/20 hover:bg-[#c9b086]/20';
 const logoSrc = isDark ? '/images/home/logo-home-header.png' : '/images/logos/logo-sin-fondo.webp';
 const mobileMenuBg = isDark ? 'bg-[#1a2535]/95' : 'bg-white/95';
 const mobileMenuBorder = isDark ? 'border-white/10' : 'border-gray-200';

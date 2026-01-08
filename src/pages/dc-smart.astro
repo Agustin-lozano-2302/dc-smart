@@ -20,16 +20,17 @@ const page = content.pages.dcSmart;
 			<Nav currentPage="propuesta" />
 
 			<div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-16 py-12 md:py-20">
-				<div class="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+				<div class="grid lg:grid-cols-1 gap-8 md:gap-12 items-center">
+						<div class="flex justify-center">
+						<img src="/images/logos/dc-new-large.svg" alt="DC Smart Logo" class=" h-48 sm:h-64 md:h-80 lg:h-96   h-auto" />
+					</div>
 					<div>
 						<div class="flex items-center gap-6 mb-4 md:mb-8">
-							<h1 class="text-4xl sm:text-6xl md:text-8xl font-bold italic text-white/20 tracking-wide">DC SMART</h1>
 						</div>
-						<p class="text-white/80 text-base md:text-lg">{page.hero.intro}</p>
+						<p class="text-white/80 text-base md:text-2xl">{page.hero.intro}</p>
 					</div>
-					<div class="flex justify-center">
-						<img src="/images/logos/gif-logo.gif" alt="DC Smart Logo" class="w-48 sm:w-72 md:w-96 h-auto" />
-					</div>
+					
+				
 				</div>
 			</div>
 		</section>
@@ -39,38 +40,34 @@ const page = content.pages.dcSmart;
 			<section class="py-12 md:py-24 relative overflow-hidden" style="background: linear-gradient(to bottom, #334355, #1a2535);">
 				<div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-16 relative z-10">
 					<!-- Dashboard -->
-					<div class="relative mx-auto max-w-4xl mb-10 md:mb-20">
-						<div class="rounded-2xl overflow-hidden border border-[#c1b387]/30 shadow-2xl shadow-[#c1b387]/10">
-							<img src="/images/dc smart/dcsmart hero image.png" alt="DC Smart Dashboard" class="w-full" />
-						</div>
-					</div>
+			
 
 					<!-- Cards con bordes dorados -->
 					<div class="grid grid-cols-12 gap-4 md:gap-6">
-						<div class="col-span-12 md:col-span-6 bg-gradient-to-br from-[#c1b387]/20 to-[#c1b387]/10 backdrop-blur-sm border border-[#c1b387]/30 rounded-2xl p-4 md:p-8 hover:border-[#c1b387]/50 transition-all duration-300">
+						<div class="col-span-12 md:col-span-6 bg-gradient-to-br from-[#c9b086]/20 to-[#c9b086]/10 backdrop-blur-sm border border-[#c9b086]/30 rounded-2xl p-4 md:p-8 hover:border-[#c9b086]/50 transition-all duration-300">
 							<h3 class="text-2xl font-bold text-white mb-3">Herramientas Propias</h3>
 							<p class="text-white/70 leading-relaxed mb-4">{page.tools.body}</p>
 							{page.tools.ctaHref && page.tools.ctaLabel && (
-								<a href={page.tools.ctaHref} target="_blank" rel="noopener noreferrer" class="inline-block mt-4 px-6 py-2 bg-[#c1b387]/20 border border-[#c1b387]/40 rounded-full text-[#c1b387] hover:bg-[#c1b387]/30 transition-colors">
+								<a href={page.tools.ctaHref} target="_blank" rel="noopener noreferrer" class="inline-block mt-4 px-6 py-2 bg-[#c9b086]/20 border border-[#c9b086]/40 rounded-full text-[#c9b086] hover:bg-[#c9b086]/30 transition-colors">
 									{page.tools.ctaLabel}
 								</a>
 							)}
 						</div>
 
-						<div class="col-span-12 md:col-span-6 bg-white/5 backdrop-blur-sm border border-[#c1b387]/20 rounded-2xl p-4 md:p-8 hover:border-[#c1b387]/40 transition-all duration-300">
+						<div class="col-span-12 md:col-span-6 bg-white/5 backdrop-blur-sm border border-[#c9b086]/20 rounded-2xl p-4 md:p-8 hover:border-[#c9b086]/40 transition-all duration-300">
 							<h3 class="text-2xl font-bold text-white mb-4">Mejora Continua</h3>
 							<p class="text-white/70 leading-relaxed">Se debe realizar un monitoreo constante del desempeño del negocio y la plataforma, identificando oportunidades para mejoras estratégicas y funcionales.</p>
 						</div>
 
-						<div class="col-span-12 bg-white/5 backdrop-blur-sm border border-[#c1b387]/20 rounded-2xl p-4 md:p-8 hover:border-[#c1b387]/40 transition-all duration-300">
+						<div class="col-span-12 bg-white/5 backdrop-blur-sm border border-[#c9b086]/20 rounded-2xl p-4 md:p-8 hover:border-[#c9b086]/40 transition-all duration-300">
 							<h3 class="text-2xl font-bold text-white mb-3">{page.deliverables.title}</h3>
 							<p class="text-white/70 leading-relaxed">Los dashboards y reportes constituyen entregables periódicos cruciales para la gestión organizacional. Mientras que los reportes estructuran la información para identificar tendencias, los dashboards transforman datos complejos en visualizaciones dinámicas e interactivas.</p>
 						</div>
 
-						<div class="col-span-12 sm:col-span-6 md:col-span-4 bg-white/5 backdrop-blur-sm border border-[#c1b387]/20 rounded-2xl p-4 md:p-6 hover:border-[#c1b387]/40 transition-all duration-300">
+						<div class="col-span-12 sm:col-span-6 md:col-span-4 bg-white/5 backdrop-blur-sm border border-[#c9b086]/20 rounded-2xl p-4 md:p-6 hover:border-[#c9b086]/40 transition-all duration-300">
 							<div class="flex items-center gap-3 mb-4">
-								<div class="w-10 h-10 rounded-full bg-[#c1b387]/20 flex items-center justify-center">
-									<svg class="w-5 h-5 text-[#c1b387]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<div class="w-10 h-10 rounded-full bg-[#c9b086]/20 flex items-center justify-center">
+									<svg class="w-5 h-5 text-[#c9b086]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
 									</svg>
 								</div>
@@ -79,10 +76,10 @@ const page = content.pages.dcSmart;
 							<p class="text-white/60 text-sm leading-relaxed">Punto de inicio esencial para impulsar el siguiente paso. Ofrecemos perspectivas valiosas para evaluar el desempeño e identificar áreas de mejora.</p>
 						</div>
 
-						<div class="col-span-12 sm:col-span-6 md:col-span-4 bg-white/5 backdrop-blur-sm border border-[#c1b387]/20 rounded-2xl p-4 md:p-6 hover:border-[#c1b387]/40 transition-all duration-300">
+						<div class="col-span-12 sm:col-span-6 md:col-span-4 bg-white/5 backdrop-blur-sm border border-[#c9b086]/20 rounded-2xl p-4 md:p-6 hover:border-[#c9b086]/40 transition-all duration-300">
 							<div class="flex items-center gap-3 mb-4">
-								<div class="w-10 h-10 rounded-full bg-[#c1b387]/20 flex items-center justify-center">
-									<svg class="w-5 h-5 text-[#c1b387]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<div class="w-10 h-10 rounded-full bg-[#c9b086]/20 flex items-center justify-center">
+									<svg class="w-5 h-5 text-[#c9b086]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
 									</svg>
 								</div>
@@ -91,10 +88,10 @@ const page = content.pages.dcSmart;
 							<p class="text-white/60 text-sm leading-relaxed">Identificamos los procesos que necesitan optimización. Esta etapa es crucial para mejorar la eficiencia y sostenibilidad de la empresa.</p>
 						</div>
 
-						<div class="col-span-12 sm:col-span-6 md:col-span-4 bg-white/5 backdrop-blur-sm border border-[#c1b387]/20 rounded-2xl p-4 md:p-6 hover:border-[#c1b387]/40 transition-all duration-300">
+						<div class="col-span-12 sm:col-span-6 md:col-span-4 bg-white/5 backdrop-blur-sm border border-[#c9b086]/20 rounded-2xl p-4 md:p-6 hover:border-[#c9b086]/40 transition-all duration-300">
 							<div class="flex items-center gap-3 mb-4">
-								<div class="w-10 h-10 rounded-full bg-[#c1b387]/20 flex items-center justify-center">
-									<svg class="w-5 h-5 text-[#c1b387]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<div class="w-10 h-10 rounded-full bg-[#c9b086]/20 flex items-center justify-center">
+									<svg class="w-5 h-5 text-[#c9b086]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
 									</svg>
 								</div>
