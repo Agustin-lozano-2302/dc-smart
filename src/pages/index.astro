@@ -135,7 +135,39 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
 							</p>
 						</div>
 						
-						<div id="logos-waterfall" class="relative h-[40vh] md:h-[55vh] overflow-hidden hidden md:block">
+						<!-- Mobile: Auto-scrolling carousel -->
+						<div class="md:hidden mt-8 overflow-hidden">
+							<div class="logos-carousel flex gap-6">
+								<img src="/images/negocios/imageye___-_imgi_28_Latinosandich.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_36_Thames.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_13_CHDArquitectos.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_37_Tiamo.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_23_Juanito.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_33_Nuvola.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_34_OhNoLulu.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_30_MobyDick.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_11_Bocha.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_25_LaAlacena.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_29_LosGalgos.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_8_Tognis.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<!-- Duplicated for seamless loop -->
+								<img src="/images/negocios/imageye___-_imgi_28_Latinosandich.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_36_Thames.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_13_CHDArquitectos.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_37_Tiamo.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_23_Juanito.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_33_Nuvola.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_34_OhNoLulu.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_30_MobyDick.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_11_Bocha.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_25_LaAlacena.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_29_LosGalgos.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+								<img src="/images/negocios/imageye___-_imgi_8_Tognis.webp" alt="" class="h-16 w-auto object-contain grayscale opacity-70" />
+							</div>
+						</div>
+						
+						<!-- Desktop: Waterfall effect -->
+						<div id="logos-waterfall" class="relative h-[55vh] overflow-hidden hidden md:block">
 							<div class="waterfall-fade-top"></div>
 							<div class="waterfall-fade-bottom"></div>
 							<div class="falling-logo" style="--col: 0; --delay: 0s; --duration: 4s;"><img src="/images/negocios/imageye___-_imgi_28_Latinosandich.webp" alt="" /></div>
@@ -513,6 +545,25 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
 			
 			.counter {
 				transition: all 0.3s ease-out;
+			}
+
+			/* Mobile logos carousel */
+			@keyframes scroll-logos {
+				0% {
+					transform: translateX(0);
+				}
+				100% {
+					transform: translateX(-50%);
+				}
+			}
+			
+			.logos-carousel {
+				animation: scroll-logos 20s linear infinite;
+				width: max-content;
+			}
+			
+			.logos-carousel img {
+				flex-shrink: 0;
 			}
 
 			.scrollbar-hide {
