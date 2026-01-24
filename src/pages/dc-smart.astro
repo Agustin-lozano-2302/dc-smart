@@ -14,23 +14,59 @@ const page = content.pages.dcSmart;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="description" content={page.hero.intro} />
 		<title>{page.meta.title} - DC Management</title>
+		<style>
+			.hero-glow {
+				position: absolute;
+				width: 400px;
+				height: 400px;
+				background: radial-gradient(circle, rgba(201, 176, 134, 0.15) 0%, transparent 70%);
+				border-radius: 50%;
+				filter: blur(60px);
+				animation: float-glow 6s ease-in-out infinite;
+			}
+			@keyframes float-glow {
+				0%, 100% { transform: translate(0, 0) scale(1); }
+				50% { transform: translate(20px, -20px) scale(1.1); }
+			}
+			.card-shine {
+				position: relative;
+				overflow: hidden;
+			}
+			.card-shine::before {
+				content: '';
+				position: absolute;
+				top: -50%;
+				left: -50%;
+				width: 200%;
+				height: 200%;
+				background: linear-gradient(
+					45deg,
+					transparent 40%,
+					rgba(201, 176, 134, 0.1) 50%,
+					transparent 60%
+				);
+				transform: translateX(-100%);
+				transition: transform 0.6s ease;
+			}
+			.card-shine:hover::before {
+				transform: translateX(100%);
+			}
+		</style>
 	</head>
 	<body>
-		<section class="relative" style="background:#334355;">
+		<section class="relative overflow-hidden" style="background:#334355;">
+			<div class="hero-glow top-20 -left-20"></div>
+			<div class="hero-glow bottom-0 right-0" style="animation-delay: 3s;"></div>
 			<Nav currentPage="propuesta" />
 
-			<div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-16 py-12 md:py-20">
+			<div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-16 py-12 md:py-20 relative z-10">
 				<div class="grid lg:grid-cols-1 gap-8 md:gap-12 items-center">
-						<div class="flex justify-center">
-						<img src="/images/logos/dc-new-large.svg" alt="DC Smart Logo" class=" h-48 sm:h-64 md:h-80 lg:h-96   h-auto" />
+					<div class="flex justify-center animate-fade-in-down">
+						<img src="/images/logos/dc-new-large.svg" alt="DC Smart Logo" class="h-48 sm:h-64 md:h-80 lg:h-96 w-auto hover:scale-105 transition-transform duration-500" />
 					</div>
-					<div>
-						<div class="flex items-center gap-6 mb-4 md:mb-8">
-						</div>
-						<p class="text-white/80 text-base md:text-2xl">{page.hero.intro}</p>
+					<div class="text-center animate-fade-in-up" style="opacity: 0; animation-delay: 0.3s; animation-fill-mode: forwards;">
+						<p class="text-white/80 text-base md:text-2xl max-w-3xl mx-auto leading-relaxed">{page.hero.intro}</p>
 					</div>
-					
-				
 				</div>
 			</div>
 		</section>
@@ -38,64 +74,88 @@ const page = content.pages.dcSmart;
 		<main>
 			<!-- Dashboard Preview -->
 			<section class="py-12 md:py-24 relative overflow-hidden" style="background: linear-gradient(to bottom, #334355, #1a2535);">
+				<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMiI+PHBhdGggZD0iTTM2IDE2YzAtMi4yMSAxLjc5LTQgNC00czQgMS43OSA0IDQtMS43OSA0LTQgNC00LTEuNzktNC00em0wIDI0YzAtMi4yMSAxLjc5LTQgNC00czQgMS43OSA0IDQtMS43OSA0LTQgNC00LTEuNzktNC00ek0xMiAxNmMwLTIuMjEgMS43OS00IDQtNHM0IDEuNzkgNCA0LTEuNzkgNC00IDQtNC0xLjc5LTQtNHptMCAyNGMwLTIuMjEgMS43OS00IDQtNHM0IDEuNzkgNCA0LTEuNzkgNC00IDQtNC0xLjc5LTQtNHoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-50"></div>
 				<div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-16 relative z-10">
-					<!-- Dashboard -->
-			
+					
+					<div class="text-center mb-12 md:mb-16 scroll-animate">
+						<h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#c9b086] mb-4">Nuestra Propuesta</h2>
+						<p class="text-white/60 text-lg max-w-2xl mx-auto">Soluciones tecnológicas diseñadas para potenciar tu negocio</p>
+					</div>
 
 					<!-- Cards con bordes dorados -->
 					<div class="grid grid-cols-12 gap-4 md:gap-6">
-						<div class="col-span-12 md:col-span-6 bg-gradient-to-br from-[#c9b086]/20 to-[#c9b086]/10 backdrop-blur-sm border border-[#c9b086]/30 rounded-2xl p-4 md:p-8 hover:border-[#c9b086]/50 transition-all duration-300">
-							<h3 class="text-2xl font-bold text-white mb-3">Herramientas Propias</h3>
+						<div class="col-span-12 md:col-span-6 card-shine bg-gradient-to-br from-[#c9b086]/20 to-[#c9b086]/10 backdrop-blur-sm border border-[#c9b086]/30 rounded-2xl p-4 md:p-8 hover:border-[#c9b086]/50 hover:shadow-lg hover:shadow-[#c9b086]/10 transition-all duration-500 scroll-animate" data-delay="0">
+							<div class="w-12 h-12 rounded-full bg-[#c9b086]/20 flex items-center justify-center mb-4 animate-float">
+								<svg class="w-6 h-6 text-[#c9b086]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+								</svg>
+							</div>
+							<h3 class="text-2xl font-bold text-[#fff5e7] mb-3">Herramientas Propias</h3>
 							<p class="text-white/70 leading-relaxed mb-4">{page.tools.body}</p>
 							{page.tools.ctaHref && page.tools.ctaLabel && (
-								<a href={page.tools.ctaHref} target="_blank" rel="noopener noreferrer" class="inline-block mt-4 px-6 py-2 bg-[#c9b086]/20 border border-[#c9b086]/40 rounded-full text-[#c9b086] hover:bg-[#c9b086]/30 transition-colors">
+								<a href={page.tools.ctaHref} target="_blank" rel="noopener noreferrer" class="inline-block mt-4 px-6 py-2 bg-[#c9b086]/20 border border-[#c9b086]/40 rounded-full text-[#c9b086] hover:bg-[#c9b086]/30 hover:scale-105 transition-all duration-300">
 									{page.tools.ctaLabel}
 								</a>
 							)}
 						</div>
 
-						<div class="col-span-12 md:col-span-6 bg-white/5 backdrop-blur-sm border border-[#c9b086]/20 rounded-2xl p-4 md:p-8 hover:border-[#c9b086]/40 transition-all duration-300">
-							<h3 class="text-2xl font-bold text-white mb-4">Mejora Continua</h3>
+						<div class="col-span-12 md:col-span-6 card-shine bg-white/5 backdrop-blur-sm border border-[#c9b086]/20 rounded-2xl p-4 md:p-8 hover:border-[#c9b086]/40 hover:shadow-lg hover:shadow-[#c9b086]/10 transition-all duration-500 scroll-animate" data-delay="100">
+							<div class="w-12 h-12 rounded-full bg-[#c9b086]/20 flex items-center justify-center mb-4 animate-float" style="animation-delay: 0.5s;">
+								<svg class="w-6 h-6 text-[#c9b086]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+								</svg>
+							</div>
+							<h3 class="text-2xl font-bold text-[#fff5e7] mb-4">Mejora Continua</h3>
 							<p class="text-white/70 leading-relaxed">Se debe realizar un monitoreo constante del desempeño del negocio y la plataforma, identificando oportunidades para mejoras estratégicas y funcionales.</p>
 						</div>
 
-						<div class="col-span-12 bg-white/5 backdrop-blur-sm border border-[#c9b086]/20 rounded-2xl p-4 md:p-8 hover:border-[#c9b086]/40 transition-all duration-300">
-							<h3 class="text-2xl font-bold text-white mb-3">{page.deliverables.title}</h3>
-							<p class="text-white/70 leading-relaxed">Los dashboards y reportes constituyen entregables periódicos cruciales para la gestión organizacional. Mientras que los reportes estructuran la información para identificar tendencias, los dashboards transforman datos complejos en visualizaciones dinámicas e interactivas.</p>
+						<div class="col-span-12 card-shine bg-white/5 backdrop-blur-sm border border-[#c9b086]/20 rounded-2xl p-4 md:p-8 hover:border-[#c9b086]/40 hover:shadow-lg hover:shadow-[#c9b086]/10 transition-all duration-500 scroll-animate" data-delay="200">
+							<div class="flex flex-col md:flex-row md:items-start gap-4">
+								<div class="w-12 h-12 rounded-full bg-[#c9b086]/20 flex items-center justify-center flex-shrink-0 animate-float" style="animation-delay: 1s;">
+									<svg class="w-6 h-6 text-[#c9b086]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+									</svg>
+								</div>
+								<div>
+									<h3 class="text-2xl font-bold text-[#fff5e7] mb-3">{page.deliverables.title}</h3>
+									<p class="text-white/70 leading-relaxed">Los dashboards y reportes constituyen entregables periódicos cruciales para la gestión organizacional. Mientras que los reportes estructuran la información para identificar tendencias, los dashboards transforman datos complejos en visualizaciones dinámicas e interactivas.</p>
+								</div>
+							</div>
 						</div>
 
-						<div class="col-span-12 sm:col-span-6 md:col-span-4 bg-white/5 backdrop-blur-sm border border-[#c9b086]/20 rounded-2xl p-4 md:p-6 hover:border-[#c9b086]/40 transition-all duration-300">
+						<div class="col-span-12 sm:col-span-6 md:col-span-4 card-shine bg-white/5 backdrop-blur-sm border border-[#c9b086]/20 rounded-2xl p-4 md:p-6 hover:border-[#c9b086]/40 hover:shadow-lg hover:shadow-[#c9b086]/10 hover:-translate-y-1 transition-all duration-500 scroll-animate" data-delay="300">
 							<div class="flex items-center gap-3 mb-4">
 								<div class="w-10 h-10 rounded-full bg-[#c9b086]/20 flex items-center justify-center">
 									<svg class="w-5 h-5 text-[#c9b086]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
 									</svg>
 								</div>
-								<h3 class="text-white font-semibold">Auditorías</h3>
+								<h3 class="text-[#fff5e7] font-semibold">Auditorías</h3>
 							</div>
 							<p class="text-white/60 text-sm leading-relaxed">Punto de inicio esencial para impulsar el siguiente paso. Ofrecemos perspectivas valiosas para evaluar el desempeño e identificar áreas de mejora.</p>
 						</div>
 
-						<div class="col-span-12 sm:col-span-6 md:col-span-4 bg-white/5 backdrop-blur-sm border border-[#c9b086]/20 rounded-2xl p-4 md:p-6 hover:border-[#c9b086]/40 transition-all duration-300">
+						<div class="col-span-12 sm:col-span-6 md:col-span-4 card-shine bg-white/5 backdrop-blur-sm border border-[#c9b086]/20 rounded-2xl p-4 md:p-6 hover:border-[#c9b086]/40 hover:shadow-lg hover:shadow-[#c9b086]/10 hover:-translate-y-1 transition-all duration-500 scroll-animate" data-delay="400">
 							<div class="flex items-center gap-3 mb-4">
 								<div class="w-10 h-10 rounded-full bg-[#c9b086]/20 flex items-center justify-center">
 									<svg class="w-5 h-5 text-[#c9b086]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
 									</svg>
 								</div>
-								<h3 class="text-white font-semibold">Procesos</h3>
+								<h3 class="text-[#fff5e7] font-semibold">Procesos</h3>
 							</div>
 							<p class="text-white/60 text-sm leading-relaxed">Identificamos los procesos que necesitan optimización. Esta etapa es crucial para mejorar la eficiencia y sostenibilidad de la empresa.</p>
 						</div>
 
-						<div class="col-span-12 sm:col-span-6 md:col-span-4 bg-white/5 backdrop-blur-sm border border-[#c9b086]/20 rounded-2xl p-4 md:p-6 hover:border-[#c9b086]/40 transition-all duration-300">
+						<div class="col-span-12 sm:col-span-6 md:col-span-4 card-shine bg-white/5 backdrop-blur-sm border border-[#c9b086]/20 rounded-2xl p-4 md:p-6 hover:border-[#c9b086]/40 hover:shadow-lg hover:shadow-[#c9b086]/10 hover:-translate-y-1 transition-all duration-500 scroll-animate" data-delay="500">
 							<div class="flex items-center gap-3 mb-4">
 								<div class="w-10 h-10 rounded-full bg-[#c9b086]/20 flex items-center justify-center">
 									<svg class="w-5 h-5 text-[#c9b086]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
 									</svg>
 								</div>
-								<h3 class="text-white font-semibold">Información</h3>
+								<h3 class="text-[#fff5e7] font-semibold">Información</h3>
 							</div>
 							<p class="text-white/60 text-sm leading-relaxed">La gestión eficaz de la información nos permite convertir datos en conocimiento accesible para facilitar decisiones estratégicas.</p>
 						</div>
@@ -105,5 +165,29 @@ const page = content.pages.dcSmart;
 		</main>
 
 		<Footer />
+
+		<script>
+			// Scroll animations with stagger
+			const observerOptions = {
+				threshold: 0.1,
+				rootMargin: '0px 0px -50px 0px'
+			};
+
+			const scrollObserver = new IntersectionObserver((entries) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						const delay = parseInt(entry.target.getAttribute('data-delay') || '0');
+						setTimeout(() => {
+							entry.target.classList.add('visible');
+						}, delay);
+						scrollObserver.unobserve(entry.target);
+					}
+				});
+			}, observerOptions);
+
+			document.querySelectorAll('.scroll-animate').forEach(el => {
+				scrollObserver.observe(el);
+			});
+		</script>
 	</body>
 </html>

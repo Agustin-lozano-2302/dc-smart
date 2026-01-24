@@ -26,8 +26,8 @@ const allMembers = [
 			<Nav currentPage="nosotros" />
 
 			<div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-16 py-12 md:py-20">
-				<h1 class="text-4xl sm:text-6xl md:text-8xl font-bold italic text-[#c9b086]  mb-4 md:mb-6 tracking-wide">NOSOTROS</h1>
-				<p class="text-white/80 text-lg max-w-2xl">{page.intro}</p>
+				<h1 class="text-4xl sm:text-6xl md:text-8xl font-bold italic text-[#c9b086] mb-4 md:mb-6 tracking-wide animate-fade-in-up">NOSOTROS</h1>
+				<p class="text-white/80 text-lg max-w-2xl animate-fade-in-up delay-200" style="opacity: 0; animation-fill-mode: forwards;">{page.intro}</p>
 			</div>
 		</section>
 
@@ -36,9 +36,9 @@ const allMembers = [
 			<section class="py-10 md:py-16 bg-gray-50">
 				<div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-16">
 					<div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-						{page.featured.map((person: any) => (
-							<div class="text-center">
-								<div class="w-32 h-32 md:w-40 md:h-40 mx-auto overflow-hidden rounded-full bg-gray-200 shadow-lg mb-4">
+						{page.featured.map((person: any, index: number) => (
+							<div class="text-center scroll-animate-scale team-card" data-delay={index * 150}>
+								<div class="w-32 h-32 md:w-40 md:h-40 mx-auto overflow-hidden rounded-full bg-gray-200 shadow-lg mb-4 hover:shadow-xl transition-all duration-300 hover:scale-105">
 									{person.imageSrc ? (
 										<img src={person.imageSrc} alt={person.name} class="w-full h-full object-cover" />
 									) : (
@@ -58,13 +58,13 @@ const allMembers = [
 			<!-- Equipo Legal -->
 			<section class="py-10 md:py-16 bg-white">
 				<div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-16">
-					<div class="flex items-center justify-center gap-4 mb-8 md:mb-12">
+					<div class="flex items-center justify-center gap-4 mb-8 md:mb-12 scroll-animate">
 						<img src="/images/logos/logo-largo-sin-fondo.webp" alt="DC Legales" class="h-24 md:h-36 object-contain" />
 					</div>
 					<div class="grid md:grid-cols-3 gap-8">
-						{page.legales.map((person: any) => (
-							<div class="text-center">
-								<div class="w-32 h-32 md:w-40 md:h-40 mx-auto overflow-hidden rounded-full bg-gray-200 shadow-lg mb-4">
+						{page.legales.map((person: any, index: number) => (
+							<div class="text-center scroll-animate-scale team-card" data-delay={index * 150}>
+								<div class="w-32 h-32 md:w-40 md:h-40 mx-auto overflow-hidden rounded-full bg-gray-200 shadow-lg mb-4 hover:shadow-xl transition-all duration-300 hover:scale-105">
 									{person.imageSrc ? (
 										<img src={person.imageSrc} alt={person.name} class="w-full h-full object-cover" />
 									) : (
@@ -85,13 +85,13 @@ const allMembers = [
 
 				<!-- Equipo -->
 				<section>
-					<h2 class="text-2xl md:text-3xl font-bold text-[#c9b086] mb-6 md:mb-10">{page.teamTitle}</h2>
+					<h2 class="text-2xl md:text-3xl font-bold text-[#c9b086] mb-6 md:mb-10 scroll-animate">{page.teamTitle}</h2>
 					<div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-						{page.team.filter((p: any) => p.name).map((person: any) => (
-							<div class="text-center p-4 md:p-6 bg-gray-50 rounded-2xl">
-								<div class="w-28 h-28 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 bg-gray-200 shadow-lg">
+						{page.team.filter((p: any) => p.name).map((person: any, index: number) => (
+							<div class="text-center p-4 md:p-6 bg-gray-50 rounded-2xl scroll-animate-scale team-card hover:shadow-lg transition-all duration-300 hover:-translate-y-1" data-delay={index * 100}>
+								<div class="w-28 h-28 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 bg-gray-200 shadow-lg hover:shadow-xl transition-all duration-300">
 									{person.imageSrc ? (
-										<img src={person.imageSrc} alt={person.name} class="w-full h-full object-cover" />
+										<img src={person.imageSrc} alt={person.name} class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
 									) : (
 										<div class="w-full h-full flex items-center justify-center text-gray-400 text-4xl font-bold">
 											{person.name.charAt(0)}
@@ -108,5 +108,29 @@ const allMembers = [
 		</main>
 
 		<Footer />
+
+		<script>
+			// Scroll animations with stagger
+			const observerOptions = {
+				threshold: 0.1,
+				rootMargin: '0px 0px -50px 0px'
+			};
+
+			const scrollObserver = new IntersectionObserver((entries) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						const delay = parseInt(entry.target.getAttribute('data-delay') || '0');
+						setTimeout(() => {
+							entry.target.classList.add('visible');
+						}, delay);
+						scrollObserver.unobserve(entry.target);
+					}
+				});
+			}, observerOptions);
+
+			document.querySelectorAll('.scroll-animate, .scroll-animate-scale, .scroll-animate-left, .scroll-animate-right').forEach(el => {
+				scrollObserver.observe(el);
+			});
+		</script>
 	</body>
 </html>

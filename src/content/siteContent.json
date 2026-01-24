@@ -22,7 +22,7 @@
     },
     "footer": {
       "address": "Av. Luis María Campos 1161 Buenos Aires, Argentina",
-      "phone": "+541140863279",
+      "phone": "54 9 11 4086-3066",
       "email": "info@dcmanagement.com.ar",
       "copyright": "© 2020 Creado por DC Management"
     },
@@ -210,7 +210,7 @@
           "name": "Max Martinez",
           "role": "CTO",
           "bio": "",
-          "imageSrc": "/images/max.webp"
+          "imageSrc": "/images/max.png"
         }
       ],
       "legalesTitle": "Equipo Legal",
@@ -220,19 +220,19 @@
           "name": "Genoveva López Libardi",
           "role": "Abogada",
           "bio": "",
-          "imageSrc": "/images/geno.webp"
+          "imageSrc": "/images/geno.jpg"
         },
         {
           "name": "Silvia Analía Torres",
           "role": "Abogada",
           "bio": "",
-          "imageSrc": "/images/silvia-2.jpg"
+          "imageSrc": "/images/silvia.png"
         },
         {
           "name": "María Antonella Aguirre",
           "role": "Abogada",
           "bio": "",
-          "imageSrc": "/images/maria-anto.png"
+          "imageSrc": "/images/maria.png"
         }
       ],
       "teamTitle": "Nuestro Equipo",
@@ -240,57 +240,69 @@
       "team": [
         {
           "name": "Nahuel Sanchez",
-          "role": "Reporting & Costos",
+          "role": "Gestion de Costos",
           "bio": "",
-          "imageSrc": "/images/nahuel.webp"
+          "imageSrc": "/images/nahuel-lencina-genion costos.jpeg"
+        },
+        {
+          "name": "Stefefania Gómez",
+          "role": "Gestora de Oficina",
+          "bio": "",
+          "imageSrc": "/images/stefefania guzman - gestora de oficina.jpeg"
         },
         {
           "name": "Anaxi Melgarejo",
-          "role": "Auditoria e Informes",
+          "role": "Analista de Datos",
           "bio": "",
-          "imageSrc": "/images/anaxi.webp"
+          "imageSrc": "/images/anaxi melgarejo - analista de datos.jpeg"
         },
         {
-          "name": "Ana Corra",
-          "role": "RRHH & Control",
+          "name": "Jorge Herrera",
+          "role": "Auditor",
           "bio": "",
-          "imageSrc": "/images/ana.webp"
+          "imageSrc": "/images/jorge herrera - auditor.jpeg"
         },
         {
-          "name": "Debora Benitez",
-          "role": "Marketing",
+          "name": "Agustin Lozano",
+          "role": "Desarrollador",
           "bio": "",
-          "imageSrc": "/images/deby.webp"
+          "imageSrc": "/images/agustin - desarrollador.jpeg"
         },
         {
-          "name": "Jorge Ferrara",
-          "role": "Auditoría",
+          "name": "Carolina Mora",
+          "role": "Auditora",
           "bio": "",
-          "imageSrc": "/images/jorge.webp"
+          "imageSrc": "/images/carolinamora.jpeg"
         },
         {
-          "name": "Romina Cambiasso",
-          "role": "RRHH y Operaciones",
+          "name": "Daniela Mora",
+          "role": "Gestión de Clientes",
           "bio": "",
-          "imageSrc": "/images/romina.webp"
+          "imageSrc": "/images/daniela mora - gestion de clientes.jpeg"
         },
         {
-          "name": "Mariano Riveira",
-          "role": "Contador Publico",
+          "name": "Gladys Gonzalez",
+          "role": "Recursos Humanos",
           "bio": "",
-          "imageSrc": ""
+          "imageSrc": "/images/gladys gonzalez - recursos humanos.jpeg"
         },
         {
-          "name": "Andrea Panza",
-          "role": "RRHH",
-          "bio": "",
-          "imageSrc": ""
+        "name": "Guillermo Llanos",
+        "role": "Tesoreria",
+        "bio": "",
+        "imageSrc": "/images/guille llanos - tesorero.jpeg"
         },
         {
-          "name": "Guillermo Llanos ",
+          "name": "Jose Roque",
+          "role": "Gestor de Proyectos",
+          "bio": "",
+          "imageSrc": "/images/jose roque - gestor de proyectos.jpeg"
+        },
+        {
+          "name": "Noralba Meza",
           "role": "Tesoreria",
           "bio": "",
-          "imageSrc": ""
+          "imageSrc": "/images/noralba meza - tesoreria.jpeg"
         }
       ]
     },
@@ -331,4 +343,4 @@
       "Verificar si existe realmente la sección 'Presentaciones y entregables' en DC Smart (no se detectó en /dc-smart)."
     ]
   }
-}
+  }
