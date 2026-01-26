@@ -14,9 +14,9 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
-		<meta name="description" content="Tu rentabilidad, nuestra Gestión. Descubrí una nueva forma de gestionar tu información de manera simple, ágil y segura." />
+		<meta name="description" content="Descubrí una nueva forma de gestionar tu información de manera simple, ágil y segura. Diseñamos un sistema para hacer tu experiencia más eficiente y ordenada." />
 		<title>DC Smart - Tu rentabilidad, nuestra Gestión</title>
-		<style>
+		<style>	
 			.splash-screen {
 				position: fixed;
 				inset: 0;
@@ -99,20 +99,16 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
 			</nav>
 
 			<div class="relative max-w-7xl mx-auto px-4 sm:px-8 md:px-16 pt-16 md:pt-40 pb-16 md:pb-32">
-				<div class="max-w-3xl">
-					<h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-[5rem] font-bold leading-tight text-white mb-6 md:mb-12">
+				<div class="max-w-4xl relative bottom-10">
+					<h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-[5rem] font-bold leading-tight text-white mb-6 md:mb-8 animate-fade-in-up">
 						Tu rentabilidad,<br />
 						nuestra <span class="text-[#c9b086] italic">Gestión</span>
 					</h1>
-					
-					<a href={whatsappHref} target="_blank" rel="noopener noreferrer" class="inline-block text-sm font-semibold tracking-wider px-6 py-2.5 rounded-full border-2 border-white bg-transparent text-white hover:bg-white hover:text-slate-800 transition-colors">
+					<a href={whatsappHref} target="_blank" rel="noopener noreferrer" class="inline-block mb-8 text-sm font-semibold tracking-wider px-6 py-2.5 rounded-full border-2 border-white bg-transparent text-white hover:bg-white hover:text-slate-800 hover:scale-105 transition-all duration-300 animate-fade-in-up delay-200" style="opacity: 0; animation-fill-mode: forwards;">
 						CONTACTANOS
 					</a>
-				</div>
-
-				<div class="mt-8 md:mt-0 md:absolute md:bottom-32 md:right-16 max-w-md text-white/80 text-sm md:text-base leading-relaxed tracking-wider">
-					<p>
-						Descubrir una nueva forma de gestionar tu información de manera simple, ágil y segura. Diseñamos un sistema para hacer tu experiencia más eficiente y ordenada.
+					<p class="text-white/80 text-lg md:text-xl leading-relaxed tracking-wider mb-8 md:mb-12 max-w-3xl animate-fade-in-up delay-300" style="opacity: 0; animation-fill-mode: forwards;">
+						Descubrí una nueva forma de gestionar tu información de manera simple, ágil y segura. Diseñamos un sistema para hacer tu experiencia más eficiente y ordenada.
 					</p>
 				</div>
 			</div>
@@ -122,13 +118,13 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
 			<section id="nosotros" class="py-12 md:py-20 bg-white">
 				<div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-16">
 							<div class="max-w-4xl">
-							<h2 class="text-4xl sm:text-6xl md:text-8xl font-bold italic text-[#c9b086] mb-6 md:mb-12 tracking-wide">NEGOCIOS</h2>
+							<h2 class="text-4xl sm:text-6xl md:text-8xl font-bold italic text-[#c9b086] mb-6 md:mb-12 tracking-wide scroll-animate">NEGOCIOS</h2>
 							
-							<h3 class="text-xl md:text-2xl font-bold text-[#515151] mb-6 leading-snug">
-								En <span class="italic">DC MANAGMENT</span>, acompañamos a empresas y emprendimientos con un enfoque integral de gestión.
+							<h3 class="text-xl md:text-2xl font-bold text-[#515151] mb-6 leading-snug scroll-animate" data-delay="100">
+								En <span class="italic">DC MANAGEMENT</span>, acompañamos a empresas y emprendimientos con un enfoque integral de gestión.
 							</h3>
 							
-							<p class="text-black text-base leading-relaxed">
+							<p class="text-black text-base leading-relaxed scroll-animate" data-delay="200">
 								Brindamos un servicio continuo y personalizado que combina análisis, control y administración, 
 								adaptado a las necesidades reales de cada negocio.
 							</p>
@@ -153,7 +149,6 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
 								<img src="/images/negocios/lafuerza.png" alt="" class="h-12 w-auto object-contain grayscale opacity-70" />
 								<img src="/images/negocios/lucero.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
 								<img src="/images/negocios/mona.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/nemuri.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
 								<img src="/images/negocios/nuvola.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
 								<img src="/images/negocios/revolver.png" alt="" class="h-12 w-auto object-contain grayscale opacity-70" />
 								<img src="/images/negocios/roma.png" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
@@ -176,7 +171,6 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
 								<img src="/images/negocios/lafuerza.png" alt="" class="h-12 w-auto object-contain grayscale opacity-70" />
 								<img src="/images/negocios/lucero.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
 								<img src="/images/negocios/mona.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
-								<img src="/images/negocios/nemuri.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
 								<img src="/images/negocios/nuvola.webp" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
 								<img src="/images/negocios/revolver.png" alt="" class="h-12 w-auto object-contain grayscale opacity-70" />
 								<img src="/images/negocios/roma.png" alt="" class="h-24 w-auto object-contain grayscale opacity-70" />
@@ -218,7 +212,6 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
 								<img src="/images/negocios/lafuerza.png" alt="" class="h-14 w-auto object-contain grayscale opacity-60" />
 								<img src="/images/negocios/lucero.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
 								<img src="/images/negocios/mona.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
-								<img src="/images/negocios/nemuri.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
 								<img src="/images/negocios/nuvola.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
 								<img src="/images/negocios/revolver.png" alt="" class="h-14 w-auto object-contain grayscale opacity-60" />
 								<img src="/images/negocios/roma.png" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
@@ -232,7 +225,6 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
 								<img src="/images/negocios/lafuerza.png" alt="" class="h-14 w-auto object-contain grayscale opacity-60" />
 								<img src="/images/negocios/lucero.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
 								<img src="/images/negocios/mona.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
-								<img src="/images/negocios/nemuri.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
 								<img src="/images/negocios/nuvola.webp" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
 								<img src="/images/negocios/revolver.png" alt="" class="h-14 w-auto object-contain grayscale opacity-60" />
 								<img src="/images/negocios/roma.png" alt="" class="h-28 w-auto object-contain grayscale opacity-60" />
@@ -250,28 +242,26 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
 			<section id="stats" class="py-6 md:py-12 bg-white">
 				<div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-16">
 					<div class="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-12 text-center">
-						<div>
+						<div class="scroll-animate-scale" data-delay="0">
 							<div class="flex justify-center">
-							<p class=" text-4xl sm:text-6xl md:text-7xl font-bold mb-2  text-[#c9b086] ">+</p>
+							<p class="text-4xl sm:text-6xl md:text-7xl font-bold mb-2 text-[#c9b086]">+</p>
 								<div class="counter text-4xl sm:text-6xl md:text-7xl font-bold text-[#c9b086] mb-2" data-target="52" data-suffix="">0</div>
 							</div>
 							<div class="text-black text-sm uppercase tracking-wide">Unidades de negocio</div>
 						</div>
-						
-						<div>
+						<div class="scroll-animate-scale" data-delay="150">
 							<div class="flex justify-center">
-							<p class=" text-4xl sm:text-6xl md:text-7xl font-bold mb-2  text-[#c9b086] ">+</p>
-								<div class="counter text-4xl sm:text-6xl md:text-7xl font-bold text-[#c9b086] mb-2" data-target="151861" data-suffix="" data-format="true"><span class="text-[#c9b086]">+</span>0</div>
-							</div>
-							<div class="text-black text-sm uppercase tracking-wide">Órdenes procesadas</div>
-						</div>
-						
-						<div>
-							<div class="flex justify-center">
-							<p class=" text-4xl sm:text-6xl md:text-7xl font-bold mb-2  text-[#c9b086] ">+</p>
+							<p class="text-4xl sm:text-6xl md:text-7xl font-bold mb-2 text-[#c9b086]">+</p>
 								<div class="counter text-4xl sm:text-6xl md:text-7xl font-bold text-[#c9b086] mb-2" data-target="419" data-suffix=""></div>
 							</div>
 							<div class="text-black text-sm uppercase tracking-wide">Gestiones de RRHH</div>
+						</div>
+						<div class="scroll-animate-scale" data-delay="300">
+							<div class="flex justify-center">
+							<p class="text-4xl sm:text-6xl md:text-7xl font-bold mb-2 text-[#c9b086]">+</p>
+								<div class="counter text-4xl sm:text-6xl md:text-7xl font-bold text-[#c9b086] mb-2" data-target="151861" data-suffix="" data-format="true"><span class="text-[#c9b086]">+</span>0</div>
+							</div>
+							<div class="text-black text-sm uppercase tracking-wide">Órdenes procesadas</div>
 						</div>
 					</div>
 				</div>
@@ -353,8 +343,8 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
 				<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDE2YzAtMi4yMSAxLjc5LTQgNC00czQgMS43OSA0IDQtMS43OSA0LTQgNC00LTEuNzktNC00em0wIDI0YzAtMi4yMSAxLjc5LTQgNC00czQgMS43OSA0IDQtMS43OSA0LTQgNC00LTEuNzktNC00ek0xMiAxNmMwLTIuMjEgMS43OS00IDQtNHM0IDEuNzkgNCA0LTEuNzkgNC00IDQtNC0xLjc5LTQtNHptMCAyNGMwLTIuMjEgMS43OS00IDQtNHM0IDEuNzkgNCA0LTEuNzkgNC00IDQtNC0xLjc5LTQtNHoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-40"></div>
 				<div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-16 relative z-10">
 					<div class="mb-8 md:mb-16">
-						<h2 class="text-4xl sm:text-6xl md:text-8xl font-bold italic  mb-4 md:mb-6 tracking-wide text-[#c9b086] ">SERVICIOS</h2>
-						<p class="text-white/80 text-base md:text-lg">Soluciones integrales para potenciar tu negocio</p>
+						<h2 class="text-4xl sm:text-6xl md:text-8xl font-bold italic mb-4 md:mb-6 tracking-wide text-[#c9b086] scroll-animate">SERVICIOS</h2>
+						<p class="text-white/80 text-base md:text-lg scroll-animate" data-delay="100">Soluciones integrales para potenciar tu negocio</p>
 					</div>
 					<div class="flex items-center gap-2 md:gap-4">
 						<button id="scroll-left" class="hidden md:flex flex-shrink-0 bg-white/10 backdrop-blur-md p-4 rounded-full shadow-lg hover:bg-white/20 transition-all border border-white/20 hover:scale-110 duration-300">
@@ -366,102 +356,92 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
 						<div class="relative flex-1 overflow-hidden">
 							<div id="services-carousel" class="flex gap-6 overflow-x-auto scroll-smooth pb-8 scrollbar-hide">
 								<div class="service-card snap-center flex-shrink-0 h-80 rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl hover:shadow-white/20 transition-all duration-500 hover:scale-105 hover:bg-white/15 animate-fade-in">
-									<div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center mb-6 shadow-lg animate-float">
-										<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-										</svg>
-									</div>
-									<h3 class="text-2xl font-bold text-white mb-4">Análisis de Datos</h3>
-									<p class="text-white/70 leading-relaxed">Transformamos tus datos en insights accionables para tomar decisiones estratégicas informadas.</p>
-								</div>
-
-								<div class="service-card snap-center flex-shrink-0 h-80 rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl hover:shadow-white/20 transition-all duration-500 hover:scale-105 hover:bg-white/15 animate-fade-in" style="animation-delay: 0.1s;">
-									<div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center mb-6 shadow-lg animate-float" style="animation-delay: 0.2s;">
-										<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
-										</svg>
-									</div>
-									<h3 class="text-2xl font-bold text-white mb-4">Gestión Financiera</h3>
-									<p class="text-white/70 leading-relaxed">Control total de tus finanzas con reportes detallados y proyecciones para maximizar tu rentabilidad.</p>
-								</div>
-
-								<div class="service-card snap-center flex-shrink-0 h-80 rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl hover:shadow-white/20 transition-all duration-500 hover:scale-105 hover:bg-white/15 animate-fade-in" style="animation-delay: 0.2s;">
-									<div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center mb-6 shadow-lg animate-float" style="animation-delay: 0.4s;">
-										<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-										</svg>
-									</div>
-									<h3 class="text-2xl font-bold text-white mb-4">Recursos Humanos</h3>
-									<p class="text-white/70 leading-relaxed">Gestión integral de personal, nóminas y procesos administrativos para optimizar tu equipo.</p>
-								</div>
-
-								<div class="service-card snap-center flex-shrink-0 h-80 rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl hover:shadow-white/20 transition-all duration-500 hover:scale-105 hover:bg-white/15 animate-fade-in" style="animation-delay: 0.3s;">
-									<div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center mb-6 shadow-lg animate-float" style="animation-delay: 0.6s;">
-										<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-										</svg>
-									</div>
-									<h3 class="text-2xl font-bold text-white mb-4">Consultoría Estratégica</h3>
-									<p class="text-white/70 leading-relaxed">Asesoramiento personalizado para impulsar el crecimiento y eficiencia de tu empresa.</p>
-								</div>
-
-								<div class="service-card snap-center flex-shrink-0 h-80 rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl hover:shadow-white/20 transition-all duration-500 hover:scale-105 hover:bg-white/15 animate-fade-in" style="animation-delay: 0.4s;">
-									<div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center mb-6 shadow-lg animate-float" style="animation-delay: 0.8s;">
-										<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
-										</svg>
-									</div>
-									<h3 class="text-2xl font-bold text-white mb-4">Control de Inventario</h3>
-									<p class="text-white/70 leading-relaxed">Seguimiento en tiempo real de tu stock para evitar pérdidas y optimizar tus recursos.</p>
-								</div>
-
-								<div class="service-card snap-center flex-shrink-0 h-80 rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl hover:shadow-white/20 transition-all duration-500 hover:scale-105 hover:bg-white/15 animate-fade-in" style="animation-delay: 0.5s;">
-									<div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center mb-6 shadow-lg animate-float" style="animation-delay: 1s;">
-										<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-										</svg>
-									</div>
-									<h3 class="text-2xl font-bold text-white mb-4">Automatización</h3>
-									<p class="text-white/70 leading-relaxed">Implementación de procesos automáticos para reducir costos y aumentar la productividad.</p>
-								</div>
-
-								<div class="service-card snap-center flex-shrink-0 h-80 rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl hover:shadow-white/20 transition-all duration-500 hover:scale-105 hover:bg-white/15 animate-fade-in" style="animation-delay: 0.6s;">
-									<div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center mb-6 shadow-lg animate-float" style="animation-delay: 1.2s;">
-										<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<div class="w-16 h-16 rounded-full bg-[#c9b086]/20 backdrop-blur-sm border border-[#c9b086]/30 flex items-center justify-center mb-6 shadow-lg animate-float">
+										<svg class="w-8 h-8 text-[#c9b086]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
 										</svg>
 									</div>
-									<h3 class="text-2xl font-bold text-white mb-4">Auditoría Operativa</h3>
+									<h3 class="text-2xl font-bold text-[#fff5e7] mb-4">Auditoría Operativa</h3>
 									<p class="text-white/70 leading-relaxed">Revisión de procesos, detección de riesgos y oportunidades de mejora continua.</p>
 								</div>
 
-								<div class="service-card snap-center flex-shrink-0 h-80 rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl hover:shadow-white/20 transition-all duration-500 hover:scale-105 hover:bg-white/15 animate-fade-in" style="animation-delay: 0.7s;">
-									<div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center mb-6 shadow-lg animate-float" style="animation-delay: 1.4s;">
-										<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<div class="service-card snap-center flex-shrink-0 h-80 rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl hover:shadow-white/20 transition-all duration-500 hover:scale-105 hover:bg-white/15 animate-fade-in" style="animation-delay: 0.1s;">
+									<div class="w-16 h-16 rounded-full bg-[#c9b086]/20 backdrop-blur-sm border border-[#c9b086]/30 flex items-center justify-center mb-6 shadow-lg animate-float" style="animation-delay: 0.2s;">
+										<svg class="w-8 h-8 text-[#c9b086]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
 										</svg>
 									</div>
-									<h3 class="text-2xl font-bold text-white mb-4">Análisis de Costos</h3>
+									<h3 class="text-2xl font-bold text-[#fff5e7] mb-4">Análisis de Costos</h3>
 									<p class="text-white/70 leading-relaxed">Análisis y seguimiento por áreas, productos o unidades de negocio para optimizar recursos.</p>
 								</div>
 
-								<div class="service-card snap-center flex-shrink-0 h-80 rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl hover:shadow-white/20 transition-all duration-500 hover:scale-105 hover:bg-white/15 animate-fade-in" style="animation-delay: 0.8s;">
-									<div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center mb-6 shadow-lg animate-float" style="animation-delay: 1.6s;">
-										<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<div class="service-card snap-center flex-shrink-0 h-80 rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl hover:shadow-white/20 transition-all duration-500 hover:scale-105 hover:bg-white/15 animate-fade-in" style="animation-delay: 0.2s;">
+									<div class="w-16 h-16 rounded-full bg-[#c9b086]/20 backdrop-blur-sm border border-[#c9b086]/30 flex items-center justify-center mb-6 shadow-lg animate-float" style="animation-delay: 0.4s;">
+										<svg class="w-8 h-8 text-[#c9b086]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+										</svg>
+									</div>
+									<h3 class="text-2xl font-bold text-[#fff5e7] mb-4">Consultoría Estratégica</h3>
+									<p class="text-white/70 leading-relaxed">Asesoramiento personalizado para impulsar el crecimiento y eficiencia de tu empresa.</p>
+								</div>
+
+								<div class="service-card snap-center flex-shrink-0 h-80 rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl hover:shadow-white/20 transition-all duration-500 hover:scale-105 hover:bg-white/15 animate-fade-in" style="animation-delay: 0.3s;">
+									<div class="w-16 h-16 rounded-full bg-[#c9b086]/20 backdrop-blur-sm border border-[#c9b086]/30 flex items-center justify-center mb-6 shadow-lg animate-float" style="animation-delay: 0.6s;">
+										<svg class="w-8 h-8 text-[#c9b086]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+										</svg>
+									</div>
+									<h3 class="text-2xl font-bold text-[#fff5e7] mb-4">Recursos Humanos</h3>
+									<p class="text-white/70 leading-relaxed">Gestión integral de personal, nóminas y procesos administrativos para optimizar tu equipo.</p>
+								</div>
+
+								<div class="service-card snap-center flex-shrink-0 h-80 rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl hover:shadow-white/20 transition-all duration-500 hover:scale-105 hover:bg-white/15 animate-fade-in" style="animation-delay: 0.4s;">
+									<div class="w-16 h-16 rounded-full bg-[#c9b086]/20 backdrop-blur-sm border border-[#c9b086]/30 flex items-center justify-center mb-6 shadow-lg animate-float" style="animation-delay: 0.8s;">
+										<svg class="w-8 h-8 text-[#c9b086]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+										</svg>
+									</div>
+									<h3 class="text-2xl font-bold text-[#fff5e7] mb-4">Análisis de Datos</h3>
+									<p class="text-white/70 leading-relaxed">Transformamos tus datos en insights accionables para tomar decisiones estratégicas informadas.</p>
+								</div>
+
+								<div class="service-card snap-center flex-shrink-0 h-80 rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl hover:shadow-white/20 transition-all duration-500 hover:scale-105 hover:bg-white/15 animate-fade-in" style="animation-delay: 0.5s;">
+									<div class="w-16 h-16 rounded-full bg-[#c9b086]/20 backdrop-blur-sm border border-[#c9b086]/30 flex items-center justify-center mb-6 shadow-lg animate-float" style="animation-delay: 1s;">
+										<svg class="w-8 h-8 text-[#c9b086]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+										</svg>
+									</div>
+									<h3 class="text-2xl font-bold text-[#fff5e7] mb-4">Gestión Financiera</h3>
+									<p class="text-white/70 leading-relaxed">Control total de tus finanzas con reportes detallados y proyecciones para maximizar tu rentabilidad.</p>
+								</div>
+
+								<div class="service-card snap-center flex-shrink-0 h-80 rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl hover:shadow-white/20 transition-all duration-500 hover:scale-105 hover:bg-white/15 animate-fade-in" style="animation-delay: 0.6s;">
+									<div class="w-16 h-16 rounded-full bg-[#c9b086]/20 backdrop-blur-sm border border-[#c9b086]/30 flex items-center justify-center mb-6 shadow-lg animate-float" style="animation-delay: 1.2s;">
+										<svg class="w-8 h-8 text-[#c9b086]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+										</svg>
+									</div>
+									<h3 class="text-2xl font-bold text-[#fff5e7] mb-4">Automatización</h3>
+									<p class="text-white/70 leading-relaxed">Implementación de procesos automáticos para reducir costos y aumentar la productividad.</p>
+								</div>
+
+								<div class="service-card snap-center flex-shrink-0 h-80 rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl hover:shadow-white/20 transition-all duration-500 hover:scale-105 hover:bg-white/15 animate-fade-in" style="animation-delay: 0.7s;">
+									<div class="w-16 h-16 rounded-full bg-[#c9b086]/20 backdrop-blur-sm border border-[#c9b086]/30 flex items-center justify-center mb-6 shadow-lg animate-float" style="animation-delay: 1.4s;">
+										<svg class="w-8 h-8 text-[#c9b086]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
 										</svg>
 									</div>
-									<h3 class="text-2xl font-bold text-white mb-4">Controles Internos</h3>
+									<h3 class="text-2xl font-bold text-[#fff5e7] mb-4">Controles Internos</h3>
 									<p class="text-white/70 leading-relaxed">Diseño e implementación de sistemas de control adaptados a cada empresa.</p>
 								</div>
 
-								<div class="service-card snap-center flex-shrink-0 h-80 rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl hover:shadow-white/20 transition-all duration-500 hover:scale-105 hover:bg-white/15 animate-fade-in" style="animation-delay: 0.9s;">
-									<div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center mb-6 shadow-lg animate-float" style="animation-delay: 1.8s;">
-										<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<div class="service-card snap-center flex-shrink-0 h-80 rounded-2xl p-6 backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl hover:shadow-white/20 transition-all duration-500 hover:scale-105 hover:bg-white/15 animate-fade-in" style="animation-delay: 0.8s;">
+									<div class="w-16 h-16 rounded-full bg-[#c9b086]/20 backdrop-blur-sm border border-[#c9b086]/30 flex items-center justify-center mb-6 shadow-lg animate-float" style="animation-delay: 1.6s;">
+										<svg class="w-8 h-8 text-[#c9b086]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
 										</svg>
 									</div>
-									<h3 class="text-2xl font-bold text-white mb-4">Gestión de Infraestructura</h3>
+									<h3 class="text-2xl font-bold text-[#fff5e7] mb-4">Gestión de Infraestructura</h3>
 									<p class="text-white/70 leading-relaxed">Evaluación y planificación de recursos materiales y humanos para tu organización.</p>
 								</div>
 							</div>
@@ -798,6 +778,23 @@ const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
 
 			document.querySelectorAll('section').forEach(section => {
 				sectionObserver.observe(section);
+			});
+
+			// Scroll animations with stagger for elements
+			const scrollAnimObserver = new IntersectionObserver((entries) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						const delay = parseInt(entry.target.getAttribute('data-delay') || '0');
+						setTimeout(() => {
+							entry.target.classList.add('visible');
+						}, delay);
+						scrollAnimObserver.unobserve(entry.target);
+					}
+				});
+			}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+			document.querySelectorAll('.scroll-animate, .scroll-animate-scale, .scroll-animate-left, .scroll-animate-right').forEach(el => {
+				scrollAnimObserver.observe(el);
 			});
 
 			// Copy email to clipboard
