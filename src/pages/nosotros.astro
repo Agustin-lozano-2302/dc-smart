@@ -88,18 +88,18 @@ const allMembers = [
 					<h2 class="text-2xl md:text-3xl font-bold text-[#c9b086] mb-6 md:mb-10 scroll-animate">{page.teamTitle}</h2>
 					<div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 						{page.team.filter((p: any) => p.name).map((person: any, index: number) => (
-							<div class="text-center p-4 md:p-6 bg-gray-50 rounded-2xl scroll-animate-scale team-card hover:shadow-lg transition-all duration-300 hover:-translate-y-1" data-delay={index * 100}>
-								<div class="w-28 h-28 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 bg-gray-200 shadow-lg hover:shadow-xl transition-all duration-300">
+							<div class={`text-center p-4 md:p-6 bg-gray-50 rounded-2xl scroll-animate-scale team-card hover:shadow-lg transition-all duration-300 hover:-translate-y-1 ${person.name === 'Agustin Lozano' ? 'hover:shadow-2xl hover:shadow-yellow-400/50' : ''}`} data-delay={index * 100}>
+								<div class={`w-28 h-28 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 bg-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 ${person.name === 'Agustin Lozano' ? 'hover:ring-4 hover:ring-yellow-400 hover:scale-110' : ''}`}>
 									{person.imageSrc ? (
-										<img src={person.imageSrc} alt={person.name} class="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+										<img src={person.imageSrc} alt={person.name} class={`w-full h-full object-cover hover:scale-110 transition-transform duration-300 ${person.name === 'Agustin Lozano' ? 'hover:brightness-125 hover:contrast-110' : ''}`} />
 									) : (
 										<div class="w-full h-full flex items-center justify-center text-gray-400 text-4xl font-bold">
 											{person.name.charAt(0)}
 										</div>
 									)}
 								</div>
-								<h3 class="text-xl font-bold text-[#c9b086]">{person.name}</h3>
-								<p class="text-[#c9b086]">{person.role}</p>
+								<h3 class={`text-xl font-bold text-[#c9b086] ${person.name === 'Agustin Lozano' ? 'hover:text-yellow-400 transition-colors duration-300' : ''}`}>{person.name}</h3>
+								<p class={`text-[#c9b086] ${person.name === 'Agustin Lozano' ? 'hover:text-yellow-300 transition-colors duration-300' : ''}`}>{person.role}</p>
 							</div>
 						))}
 					</div>
