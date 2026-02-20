@@ -303,6 +303,18 @@
           "role": "Tesoreria",
           "bio": "",
           "imageSrc": "/images/noralba meza - tesoreria.jpeg"
+        },
+        {
+          "name": "Debora Benitez",
+          "role": "Auditora",
+          "bio": "",
+          "imageSrc": "/images/deby.png"
+        },
+        {
+          "name": "Gabriela Malachane",
+          "role": "Analista de Datos",
+          "bio": "",
+          "imageSrc": "/images/gabriela-malachane.jpeg"
         }
       ]
     },
