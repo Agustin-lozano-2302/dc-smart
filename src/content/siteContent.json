@@ -315,6 +315,24 @@
           "role": "Analista de Datos",
           "bio": "",
           "imageSrc": "/images/gabriela-malachane.jpeg"
+        },
+        {
+          "name": "Ana Corra",
+          "role": "RRHH",
+          "bio": "",
+          "imageSrc": "/images/ana-2.jpeg"
+        },
+        {
+          "name": "Andrea Panza",
+          "role": "Responsable RRHH",
+          "bio": "",
+          "imageSrc": "/images/dc-person.png"
+        },
+        {
+          "name": "Jimena Eceiza",
+          "role": "Auditoria Externa",
+          "bio": "",
+          "imageSrc": "/images/dc-person.png"
         }
       ]
     },
